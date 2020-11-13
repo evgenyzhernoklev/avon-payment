@@ -1,0 +1,29 @@
+.logoWrapper {
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: solid 1px $white-light;
+  border-radius: 4px;
+
+  .icon {
+    max-width: 110px;
+    max-height: 60px;
+  }
+
+  &--small {
+    width: 80px;
+    height: 56px;
+    line-height: 52px;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    .icon {
+      max-width: 64px;
+      max-height: 44px;
+    }
+  }
+}

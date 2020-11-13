@@ -1,0 +1,89 @@
+.pickmeup {
+  width: 320px;
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px $white-light;
+  background-color: $white;
+
+  .pmu-instance {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 8px 8px;
+    width: 224px;
+    height: auto;
+
+    nav:first-child {
+      margin-bottom: 20px;
+    }
+
+    .pmu-day-of-week *,
+    .pmu-days * {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      vertical-align: middle;
+    }
+
+    .pmu-day-of-week * {
+      font: 12px/32px $font-montserrat;
+      color: #e1e1e1;
+    }
+
+    .pmu-button {
+      font: 12px/32px $font-montserrat;
+      color: $gray;
+      transition: color $transition-fast, background-color $transition-fast;
+
+      &:hover {
+        background-color: $pink;
+        color: $white;
+      }
+
+      &.pmu-month {
+        font: 14px/30px $font-montserrat;
+        color: $gray-light;
+
+        &:hover {
+          background-color: $white-light;
+        }
+      }
+
+      &.pmu-prev {
+        transform: rotate(90deg);
+      }
+      &.pmu-next {
+        transform: rotate(-90deg);
+      }
+      &.pmu-prev,
+      &.pmu-next {
+        font-size: 0;
+        @include background-image(arrow-dropdown-gray, 10px, 6px);
+        width: 30px;
+        height: 30px;
+        background-size: 20px 12px;
+
+        &:hover {
+          background-color: $white-light;
+        }
+      }
+    }
+
+    .pmu-selected {
+      font: 12px/32px $font-montserrat;
+      color: $white;
+      background-color: #ff7da1;
+    }
+
+    .pmu-today {
+      color: $gray;
+      background-color: transparent;
+      border: 1px solid $pink;
+    }
+  }
+}
+
+.pmu-not-in-month {
+  opacity: 0;
+  visibility: hidden;
+}

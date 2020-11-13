@@ -1,0 +1,30 @@
+// top
+.triangleShadow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -17px;
+  right: 74px;
+  transform: translateX(50%);
+}
+
+.triangleShadow__helper {
+  display: block;
+  width: 30px;
+  height: 17px;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: $white;
+    transform: rotate(45deg);
+    top: 12px;
+    left: -1px;
+    border: 1px solid $white-light;
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.07);
+  }
+}

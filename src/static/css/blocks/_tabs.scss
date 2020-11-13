@@ -1,0 +1,100 @@
+.tabs {
+  &__links {
+    display: flex;
+    background-color: $white;
+  }
+
+  &__linksCol {
+    flex-basis: 100%;
+
+    &--2 {
+      flex-basis: 50%;
+    }
+
+    &--3 {
+      flex-basis: 33.33%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0 16px;
+    height: 100%;
+    font: 500 14px/1.14 $font-montserrat;
+    text-align: center;
+    color: $gray-light;
+    border: solid 1px transparent;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: $black;
+    }
+
+    &.is-active {
+      color: $black;
+      border-color: $white-light;
+      border-bottom-color: $pink;
+    }
+  }
+
+  &__linkIn {
+    flex-basis: 80%;
+  }
+
+  &__content {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__in {
+    border: solid 1px $white-light;
+    background-color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__form {
+    padding: 30px 150px 78px;
+    border-top: solid 1px $white-light;
+  }
+}
+
+@media ($tablet) {
+  .tabs {
+    &__form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .tabs {
+    &__paymentList + &__instructions {
+      margin-top: 45px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -45px;
+        right: -20px;
+        left: -20px;
+        height: 1px;
+        background-color: $white-light;
+      }
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+
+  &__info {
+    flex-basis: 380px;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    padding: 10px 25px;
+    background-color: #f2f6f6;
+    box-shadow: 0px 2px 0 0 $white-light;
+    border: solid 1px $white-light;
+    border-radius: 4px;
+  }
+
+  &__listItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 9px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $white-light;
+    }
+  }
+
+  &__listTitle {
+    font: 14px/22px $font-montserrat;
+    text-transform: uppercase;
+    color: $gray;
+  }
+
+  &__listAmount {
+    font: 700 18px/20px $font-montserrat;
+    color: $pink;
+  }
+
+  &__listText {
+    font-size: 13px;
+    color: $pink;
+  }
+
+  &__text {
+    flex-basis: calc(100% - 405px);
+    padding-top: 15px;
+    font: 14px/1.29 $font-montserrat;
+  }
+}
+
+@media ($mobile) {
+  .balance {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__info {
+      flex-basis: 280px;
+      margin: 0 0 10px;
+    }
+
+    &__list {
+      padding: 5px 20px;
+    }
+
+    &__listText {
+      display: block;
+    }
+
+    &__text {
+      flex-basis: 100%;
+    }
+  }
+}

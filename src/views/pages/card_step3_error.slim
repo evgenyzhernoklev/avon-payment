@@ -1,0 +1,74 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - payment by card - step 3
+  body
+    .content
+      h1.content__title
+        | Оплата банковской картой
+
+      .content__steps.steps
+        .steps__item
+          span.steps__name.is-passed Информация об платеже
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name.is-passed Оплата
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name.is-passed Подтверждение оплаты
+
+      .content__in
+        h2.content__inTitle
+          | Подтверждение оплаты
+          a.content__linkBack href="#" назад
+
+        .content__check.check.check--error
+          p.check__title Извините, платёж не совершён
+          p.check__result Система временно недоступна
+          form.check__form.form.form--check
+            .form__block
+              label.form__label
+                span.form__labelTitle КОД ОШИБКИ
+                input.form__field type="text" name="" value="IPAY_RS_520000500" readonly="readonly"
+            .form__block
+              label.form__label
+                span.form__labelTitle РЕКОМЕНДАЦИЯ
+                .form__field
+                  p
+                    | Пожалуйста, попробуйте оплатить ещё раз.&nbsp;
+                  p
+                    | При сохранении проблемы&nbsp;
+                    br/
+                    | свяжитесь <a href="#">со службой поддержки AVON</a>
+
+
+          / .check__content
+            p.check__title Спасибо!
+            p.check__result.check__result--done Ваш платёж принят
+            form.check__form.form.form--check
+              .form__block
+                label.form__label
+                  span.form__labelTitle Компьютерный номер
+                  input.form__field type="text" name="" value="SOO4410U" readonly="readonly"
+              .form__block
+                label.form__label
+                  span.form__labelTitle СУММА С УЧЁТОМ КОМИССИИ
+                  input.form__field type="text" name="" value="10 196.80 ₽" readonly="readonly"
+              .form__block
+                label.form__label
+                  span.form__labelTitle ДАТА
+                  input.form__field type="text" name="" value="08.04.2019" readonly="readonly"
+              .form__block
+                label.form__label
+                  span.form__labelTitle КОД ТРАНЗАКЦИИ
+                  input.form__field type="text" name="" value="61846054" readonly="readonly"
+            .check__print
+              a.check__printLink href="#" onclick="window.print();" Распечатать квитанцию
+          .check__buttons
+            a.check__button.linkButton.linkButton--redTransparent href="#" Новый платёж
+            a.check__button.linkButton.linkButton--red href="#" На главную
+
+      include note
+
+    include scripts

@@ -1,0 +1,65 @@
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px 120px;
+  background-color: $white;
+
+  &__item {
+    &--line {
+      width: 80px;
+      height: 1px;
+      background-color: #e1e1e1;
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: inline-block;
+    font: 14px/1.2 $font-montserrat;
+    color: $gray;
+
+    &.is-current {
+      font-weight: 700;
+      color: $black;
+    }
+
+    &.is-passed {
+      color: $pink;
+
+      &:before {
+        content: '';
+        @include background-image(checkmark, 8px, 6px);
+        background-size: 20px auto;
+        margin-right: 11px;
+        width: 16px;
+        height: 16px;
+        background-color: $pink;
+        border-radius: 50%;
+        vertical-align: middle;;
+      }
+    }
+  }
+}
+
+@media ($tablet) {
+  .steps {
+    padding: 20px;
+  }
+}
+
+@media ($mobile) {
+  .steps {
+    display: block;
+    text-align: center;
+
+    &__item {
+      &--line {
+        width: 1px;
+        height: 15px;
+        margin: 5px auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/*** browser fixes ***/
+::-webkit-input-placeholder {font-weight: 400; color: #707677;}
+::-moz-placeholder          {font-weight: 400; color: #707677;} /* Firefox 19+ */
+:-moz-placeholder           {font-weight: 400; color: #707677;} /* Firefox 18- */
+:-ms-input-placeholder      {font-weight: 400; color: #707677;}
+::placeholder               {font-weight: 400; color: #707677;}
+
+form {
+  input,
+  button {
+    -moz-appearance:none;
+    -webkit-appearance: none;
+  }
+}
+
+// delete arrows
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+// ie: clear 'x' icon in text field
+::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+}
+
+input::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+}
+
+// ie: clear icon in password field
+::-ms-reveal {
+  display: none;
+}
+
+input::-ms-reveal {
+  display: none;
+}

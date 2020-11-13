@@ -1,0 +1,183 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - payment by card - card settings
+  body
+    .content
+      h1.content__title
+        | Управление банковскими картами
+
+      .content__in.content__in--mb20
+        h2.content__inTitle
+          | Управление вашими банковскими картами
+          a.content__linkBack.js-button-history-back href="#" назад
+
+      .content__in
+        .content__tabs.tabs.js-tabs
+          .tabs__links
+            .tabs__linksCol.tabs__linksCol--2
+              a.tabs__link.js-tabs-link.is-active data-content="1" href="#"
+                span.tabs__linkIn Мои карты
+            .tabs__linksCol.tabs__linksCol--2
+              a.tabs__link.js-tabs-link data-content="2" href="#"
+                span.tabs__linkIn История платежей
+          .tabs__content.js-tabs-content.is-active data-content="1"
+            .tabs__in
+              form.tabs__cardsList.cardsList
+                table.cardsList__table cellspacing="0"
+                  thead
+                    tr
+                      td Тип карты
+                      td Номер карты
+                      td Срок действия
+                      td Карта по умолчанию
+                      td
+                  tbody
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/visa-electron
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default" checked="checked"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/visa
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/mastercard-electronic
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/maestro
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/mastercard
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+                    tr
+                      td.cardsList__tableCardIcon
+                        include icons/mir
+                      td
+                        | 5321  ****   ****   0047
+                      td
+                        | 06/23
+                      td
+                        label.cardsList__tableFieldLabel
+                          input.cardsList__tableField type="radio" name="card_default"
+                          span.cardsList__tableFieldIcon
+                      td
+                        button.cardsList__tableRemoveButton type="button" удалить
+
+                .cardsList__buttons
+                  button.cardsList__button.linkButton.linkButton--redTransparent.js-button-history-back type="button" Вернуться назад
+
+          .tabs__content.js-tabs-content data-content="2"
+            .tabs__in
+              form.tabs__cardsList.cardsList
+                .cardsList__period
+                  p.cardsList__periodText
+                    | Чтобы посмотреть операции за определённый период, выберите дату начала и окончания периода:
+                  .cardsList__periodInfo
+                    label.cardsList__periodLabel
+                      input.cardsList__periodField.js-field-date-range type="text" name="payment_period" placeholder="08/11/2019 - 10/01/2020"
+                      span.cardsList__periodFieldIcon
+                    button.content__linkBack.cardsList__periodLink type="button" СМОТРЕТЬ
+                p.cardsList__subtitle Последние операции:
+                table.cardsList__table cellspacing="0"
+                  thead
+                    tr
+                      td Дата
+                      td Номер транзакции
+                      td Номер карты
+                      td Сумма платежа ₽
+                      td Комиссия ₽
+                      td Результат
+                  tbody
+                    tr
+                      td 17.11.2019
+                      td 12345678
+                      td 5321  ****   ****   0047
+                      td 1000,00
+                      td 20,00
+                      td
+                        span.cardsList__tableResult Успешно
+                    tr
+                      td 17.11.2019
+                      td 12345678
+                      td 5321  ****   ****   0047
+                      td 1000,00
+                      td 65,20
+                      td
+                        span.cardsList__tableResult.is-error Отклонено
+                    tr
+                      td 17.11.2019
+                      td 12345678
+                      td 5321  ****   ****   0047
+                      td 1000,00
+                      td 20,00
+                      td
+                        span.cardsList__tableResult Успешно
+                    tr
+                      td 17.11.2019
+                      td 12345678
+                      td 5321  ****   ****   0047
+                      td 1000,00
+                      td 65,20
+                      td
+                        span.cardsList__tableResult.is-error Отклонено
+
+                .cardsList__buttons
+                  button.cardsList__button.linkButton.linkButton--redTransparent.js-button-history-back type="button" Вернуться назад
+                  button.cardsList__button.linkButton.linkButton--red type="button" Показать больше
+                  button.cardsList__button.linkButton.linkButton--redTransparent.js-button-print type="button"
+                    span.linkButton__icon.linkButton__icon--print
+                    | Распечатать
+
+      include note
+
+    include scripts

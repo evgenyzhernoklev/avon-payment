@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <link href="static/css/gi3.css" rel="stylesheet" />
+    <title>AVON - payment by card - step 3</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="content__title">
+        Оплата банковской картой
+      </h1>
+      <div class="content__steps steps">
+        <div class="steps__item">
+          <span class="steps__name is-passed">Информация об платеже</span>
+        </div>
+        <div class="steps__item steps__item--line"></div>
+        <div class="steps__item">
+          <span class="steps__name is-passed">Оплата</span>
+        </div>
+        <div class="steps__item steps__item--line"></div>
+        <div class="steps__item">
+          <span class="steps__name is-passed">Подтверждение оплаты</span>
+        </div>
+      </div>
+      <div class="content__in">
+        <h2 class="content__inTitle">
+          Подтверждение оплаты<a class="content__linkBack" href="#">назад</a>
+        </h2>
+        <div class="content__check check">
+          <div class="check__content">
+            <p class="check__title">
+              Спасибо!
+            </p>
+            <p class="check__result check__result--done">
+              Ваш платёж принят
+            </p>
+            <form class="check__form form form--check">
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">Компьютерный номер</span><input class="form__field" name="" readonly="readonly" type="text" value="SOO4410U" /></label>
+              </div>
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">СУММА С УЧЁТОМ КОМИССИИ</span><input class="form__field" name="" readonly="readonly" type="text" value="10 196.80 ₽" /></label>
+              </div>
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">ДАТА</span><input class="form__field" name="" readonly="readonly" type="text" value="08.04.2019" /></label>
+              </div>
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">КОД ТРАНЗАКЦИИ</span><input class="form__field" name="" readonly="readonly" type="text" value="61846054" /></label>
+              </div>
+            </form>
+            <div class="check__print">
+              <a class="check__printLink" href="#" onclick="window.print();">Распечатать квитанцию</a>
+            </div>
+          </div>
+          <div class="check__buttons">
+            <a class="check__button linkButton linkButton--redTransparent" href="#">Новый платёж</a><a class="check__button linkButton linkButton--red" href="#">На главную</a>
+          </div>
+        </div>
+      </div>
+      <p class="content__note">
+        Сервис обеспечивает <span>ООО НКО «ПэйЮ»</span><br />Служба поддержки PayU работает круглосуточно: <a href="tel:84996492009">+7 (499) 649-20-09</a>; <a href="tel:88002003262">8-800-200-32-62</a> (звонок бесплатный), <a href="mailto:support@payu.ru">support@payu.ru</a>
+      </p>
+    </div>
+    <script src="static/js/gi3.js"></script>
+  </body>
+</html>

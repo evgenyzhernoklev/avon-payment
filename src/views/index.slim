@@ -1,0 +1,225 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - payment
+  body
+    .content
+      h1.content__title
+        | Способы оплаты
+
+      .content__balance.balance
+        .balance__info
+          ul.balance__list
+            li.balance__listItem
+              span.balance__listTitle БАЛАНС
+              span.balance__listAmount
+                i.balance__listText Задолженность
+                |  14 447,05 ₽
+            li.balance__listItem
+              span.balance__listTitle ПЕНИ
+              span.balance__listAmount  563, 20 ₽
+        .balance__text
+          | Подтверждение об оплате по представленным платежным системам поступает в компанию в течение 1 ч.
+          br/
+          | Для оплаты через Сбербанк Онлайн, CyberPlat, WebMoney, QIWI Кошелек, Элекснет, Яндекс.Деньги, Альфа - Клик необходимо сначала зарегистрироваться на соответствующем сайте и/или создать электронный кошелек.
+
+      .content__tabs.tabs.js-tabs
+        .tabs__links
+          .tabs__linksCol.tabs__linksCol--3
+            a.tabs__link.js-tabs-link.is-active data-content="1" href="#"
+              span.tabs__linkIn Банковская карта
+          .tabs__linksCol.tabs__linksCol--3
+            a.tabs__link.js-tabs-link data-content="2" href="#"
+              span.tabs__linkIn Счёт мобильного телефона
+          .tabs__linksCol.tabs__linksCol--3
+            a.tabs__link.js-tabs-link data-content="3" href="#"
+              span.tabs__linkIn Электронные кошельки и Интернет-банкинг
+        .tabs__content.js-tabs-content.is-active data-content="1"
+          .tabs__in
+            .tabs__byCard.byCard
+              span.byCard__label.infoLabel КОМИССИЯ 1,93%
+              .byCard__logos
+                .byCard__logoWrapper.logoWrapper
+                  include icons/visa-electron
+                .byCard__logoWrapper.logoWrapper
+                  include icons/visa
+                .byCard__logoWrapper.logoWrapper
+                  include icons/mastercard-electronic
+                .byCard__logoWrapper.logoWrapper
+                  include icons/maestro
+                .byCard__logoWrapper.logoWrapper
+                  include icons/mastercard
+                .byCard__logoWrapper.logoWrapper
+                  include icons/mir
+              .byCard__instructions.instructions
+                .instructions__item
+                  p.instructions__itemInfo
+                    | <strong>Сумма платежа:</strong> Минимальная сумма платежа составляет 1₽, максимальная сумма устанавливается банком, выпустившим карту.
+                  p.instructions__itemInfo
+                    | Можно произвести оплату банковскими картами МИР, Visa, Visa Electron,
+                    |  MasterCard, Maestro, выпущенными любым банком, при условии,
+                    |  что в описании вашей банковской карты прописано, что с её помощью можно
+                    |  оплачивать покупки через Интернет.
+            form.tabs__form.form
+              / .form__block.form__block--checkbox
+                label.form__label
+                  input.form__field type="checkbox" name="" value=""
+                  span.form__labelIcon
+              p.form__labelInfo
+                | Настоящим я подтверждаю, что ознакомилась / ознакомился
+                |  с <a href="#">договором-оферты</a>, который содержит условия предоставления
+                |  данного сервиса, и подтверждаю свое согласие с условиями
+                |  договора-оферты в полном объеме путем нажатия кнопки «Далее»
+              .form__cols.form__cols--marginTop
+                .form__col
+                  a.form__linkFaq.form__linkFaq--question href="#" Часто задаваемые вопросы
+                .form__col
+                  button.form__button.linkButton.linkButton--red type="submit" Далее
+          include note
+
+        .tabs__content.js-tabs-content data-content="2"
+          .tabs__in
+            .tabs__paymentList.paymentList
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/mts
+                  .paymentList__itemColIn
+                    p.paymentList__itemName МТС
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 3,5%
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/beeline
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Билайн
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 2%
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/megafon
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Мегафон
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 4,49%
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/tele2
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Теле2
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 2,9%
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+            ol.tabs__instructions.instructions
+              li.instructions__item
+                | Введите номер Лицевого счёта (компьютерный номер);
+              li.instructions__item
+                | Введите номер своего мобильного телефона;
+              li.instructions__item
+                | Введите необходимую сумму оплаты;
+              li.instructions__item
+                | Дождитесь SMS от Вашего Оператора мобильной связи и следуйте указанным в сообщении инструкциям
+
+        .tabs__content.js-tabs-content data-content="3"
+          .tabs__in
+            .tabs__paymentList.paymentList
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/cyberplat
+                  .paymentList__itemColIn
+                    p.paymentList__itemName CyberPlat
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 1%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 10 до 15 000 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/eleksnet
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Элекснет
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 1,7%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 0,01 до 15 000 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/yandex-money
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Яндекс.Деньги
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 3,5%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 1 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/webmoney
+                  .paymentList__itemColIn
+                    p.paymentList__itemName WebMoney
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 1,7%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 1 до 15 000 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    img.icon src="static/images/gi3/logos/visa-qiwi-wallet.png"
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Visa Qiwi Wallet
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 2%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 0,01 до 15 000 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    include icons/sberbank-online
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Сбербанк Онлайн
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 1%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 1 до 15 000 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+              .paymentList__item
+                .paymentList__itemCol
+                  .paymentList__logoWrapper.logoWrapper
+                    img.icon src="static/images/gi3/logos/alfa-click.png"
+                  .paymentList__itemColIn
+                    p.paymentList__itemName Альфа-Клик
+                    span.paymentList__itemLabel.infoLabel КОМИССИЯ 1,7%
+                    p.paymentList__itemInfo
+                      i Сумма платежа:
+                      |  от 1 руб.
+                .paymentList__itemCol
+                  a.paymentList__itemButton.linkButton.linkButton--redTransparent href="#" Оплатить
+                  a.paymentList__itemLink href="#" Регистрация в системе
+
+    include scripts

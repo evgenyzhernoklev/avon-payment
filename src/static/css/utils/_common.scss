@@ -1,0 +1,17 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 16px/1.5 $font-montserrat;
+  color: $black;
+  background-color: #F6F9F9;
+}
+
+a, button {
+  transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal, box-shadow $transition-normal;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}

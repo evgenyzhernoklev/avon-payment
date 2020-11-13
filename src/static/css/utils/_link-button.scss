@@ -1,0 +1,47 @@
+.linkButton {
+  display: inline-block;
+  padding: 5px 13px;
+  line-height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &--red {
+    padding: 18px 10px;
+    height: auto;
+    font: 500 16px/20px $font-montserrat;
+    text-align: center;
+    color: $white;
+    border-radius: 4px;
+    background-color: $pink;
+
+    &:hover {
+      color: $white;
+      background-color: $pink-hover;
+    }
+  }
+
+  &--redTransparent {
+    padding: 17px 10px;
+    height: auto;
+    font: 500 16px/20px $font-montserrat;
+    text-align: center;
+    color: $pink;
+    border: solid 1px $pink;
+    border-radius: 4px;
+
+    &:hover {
+      color: $pink;
+      background-color: rgba(255, 151, 180, 0.1);
+      border-color: rgba(255, 151, 180, 0.1);
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+    vertical-align: text-bottom;
+
+    &--print {
+      @include background-image(print-red, 23px, 21px);
+    }
+  }
+}

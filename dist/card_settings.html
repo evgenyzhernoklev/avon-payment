@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <link href="static/css/gi3.css" rel="stylesheet" />
+    <title>AVON - payment by card - card settings</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="content__title">
+        Управление банковскими картами
+      </h1>
+      <div class="content__in content__in--mb20">
+        <h2 class="content__inTitle">
+          Управление вашими банковскими картами<a class="content__linkBack js-button-history-back" href="#">назад</a>
+        </h2>
+      </div>
+      <div class="content__in">
+        <div class="content__tabs tabs js-tabs">
+          <div class="tabs__links">
+            <div class="tabs__linksCol tabs__linksCol--2">
+              <a class="tabs__link js-tabs-link is-active" data-content="1" href="#"><span class="tabs__linkIn">Мои карты</span></a>
+            </div>
+            <div class="tabs__linksCol tabs__linksCol--2">
+              <a class="tabs__link js-tabs-link" data-content="2" href="#"><span class="tabs__linkIn">История платежей</span></a>
+            </div>
+          </div>
+          <div class="tabs__content js-tabs-content is-active" data-content="1">
+            <div class="tabs__in">
+              <form class="tabs__cardsList cardsList">
+                <table cellspacing="0" class="cardsList__table">
+                  <thead>
+                    <tr>
+                      <td>
+                        Тип карты
+                      </td>
+                      <td>
+                        Номер карты
+                      </td>
+                      <td>
+                        Срок действия
+                      </td>
+                      <td>
+                        Карта по умолчанию
+                      </td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#visa-electron"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input checked="checked" class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#visa"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mastercard-electronic"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#maestro"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mastercard"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cardsList__tableCardIcon">
+                        <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mir"></use></svg>
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        06/23
+                      </td>
+                      <td>
+                        <label class="cardsList__tableFieldLabel"><input class="cardsList__tableField" name="card_default" type="radio" /><span class="cardsList__tableFieldIcon"></span></label>
+                      </td>
+                      <td>
+                        <button class="cardsList__tableRemoveButton" type="button">удалить</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="cardsList__buttons">
+                  <button class="cardsList__button linkButton linkButton--redTransparent js-button-history-back" type="button">Вернуться назад</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tabs__content js-tabs-content" data-content="2">
+            <div class="tabs__in">
+              <form class="tabs__cardsList cardsList">
+                <div class="cardsList__period">
+                  <p class="cardsList__periodText">
+                    Чтобы посмотреть операции за определённый период, выберите дату начала и окончания периода:
+                  </p>
+                  <div class="cardsList__periodInfo">
+                    <label class="cardsList__periodLabel"><input class="cardsList__periodField js-field-date-range" name="payment_period" placeholder="08/11/2019 - 10/01/2020" type="text" /><span class="cardsList__periodFieldIcon"></span></label><button class="content__linkBack cardsList__periodLink" type="button">СМОТРЕТЬ</button>
+                  </div>
+                </div>
+                <p class="cardsList__subtitle">
+                  Последние операции:
+                </p>
+                <table cellspacing="0" class="cardsList__table">
+                  <thead>
+                    <tr>
+                      <td>
+                        Дата
+                      </td>
+                      <td>
+                        Номер транзакции
+                      </td>
+                      <td>
+                        Номер карты
+                      </td>
+                      <td>
+                        Сумма платежа ₽
+                      </td>
+                      <td>
+                        Комиссия ₽
+                      </td>
+                      <td>
+                        Результат
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        17.11.2019
+                      </td>
+                      <td>
+                        12345678
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        1000,00
+                      </td>
+                      <td>
+                        20,00
+                      </td>
+                      <td>
+                        <span class="cardsList__tableResult">Успешно</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        17.11.2019
+                      </td>
+                      <td>
+                        12345678
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        1000,00
+                      </td>
+                      <td>
+                        65,20
+                      </td>
+                      <td>
+                        <span class="cardsList__tableResult is-error">Отклонено</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        17.11.2019
+                      </td>
+                      <td>
+                        12345678
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        1000,00
+                      </td>
+                      <td>
+                        20,00
+                      </td>
+                      <td>
+                        <span class="cardsList__tableResult">Успешно</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        17.11.2019
+                      </td>
+                      <td>
+                        12345678
+                      </td>
+                      <td>
+                        5321  ****   ****   0047
+                      </td>
+                      <td>
+                        1000,00
+                      </td>
+                      <td>
+                        65,20
+                      </td>
+                      <td>
+                        <span class="cardsList__tableResult is-error">Отклонено</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="cardsList__buttons">
+                  <button class="cardsList__button linkButton linkButton--redTransparent js-button-history-back" type="button">Вернуться назад</button><button class="cardsList__button linkButton linkButton--red" type="button">Показать больше</button><button class="cardsList__button linkButton linkButton--redTransparent js-button-print" type="button"><span class="linkButton__icon linkButton__icon--print"></span>Распечатать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="content__note">
+        Сервис обеспечивает <span>ООО НКО «ПэйЮ»</span><br />Служба поддержки PayU работает круглосуточно: <a href="tel:84996492009">+7 (499) 649-20-09</a>; <a href="tel:88002003262">8-800-200-32-62</a> (звонок бесплатный), <a href="mailto:support@payu.ru">support@payu.ru</a>
+      </p>
+    </div>
+    <script src="static/js/gi3.js"></script>
+  </body>
+</html>

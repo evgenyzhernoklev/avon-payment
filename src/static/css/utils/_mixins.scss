@@ -1,0 +1,21 @@
+@mixin background-image($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/gi3/sprites/sprite.svg##{$name}');
+  background-size: cover;
+}
+
+@mixin show() {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}
+
+@mixin hide() {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}

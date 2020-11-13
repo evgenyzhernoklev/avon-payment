@@ -1,0 +1,138 @@
+.creditCards {
+  margin: 25px 0 20px;
+
+  &__cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &--end {
+      justify-content: flex-end;
+    }
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    width: 510px;
+    padding: 25px 33px 35px;
+    border: solid 1px $white-light;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.15);
+
+    &--back {
+      z-index: 0;
+      margin: -305px 0 0;
+      width: 560px;
+      height: 350px;
+      background-color: #f6f9f9;
+      box-shadow: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 46px;
+        right: 0;
+        left: 0;
+        height: 68px;
+        background-color: rgba(84, 98, 100, 0.1);
+      }
+
+      .form__block--cvv {
+        position: absolute;
+        right: 50px;
+        bottom: 72px;
+      }
+    }
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 21px;
+
+    .icon {
+      max-width: 38px;
+      max-height: 24px;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__block {
+    &.form__block {
+      margin-bottom: 21px;
+    }
+
+    .form__labelTitle {
+      font: 10px/1.2 $font-montserrat;
+      text-transform: uppercase;
+      color: $gray-light;
+    }
+
+    .form__field {
+      padding: 0 8px;
+      height: 50px;
+      font: 24px/50px $font-montserrat;
+      line-height: 50px;
+      border: 0;
+      background-color: #f6f9f9;
+    }
+  }
+
+  &__selectWrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 21px;
+    width: 225px;
+
+    .form__block {
+      margin: 0;
+    }
+  }
+
+  &__delimiter {
+    font: 16px/50px $font-montserrat;
+    color: $gray-light;
+  }
+}
+
+@media ($mobile) {
+  .creditCards {
+    margin-top: -4px;
+
+    &__card {
+      padding: 20px 20px 0;
+      width: 100%;
+
+      &--back {
+        margin-top: -190px;
+
+        .form__block--cvv {
+          bottom: 20px;
+        }
+      }
+    }
+
+    &__selectWrapper {
+      max-width: 198px;
+    }
+
+    &__block {
+      .form__field {
+        font-size: 18px;
+      }
+    }
+
+    &__logos {
+      .icon:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <link href="static/css/gi3.css" rel="stylesheet" />
+    <title>AVON - payment by card - step 1</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="content__title">
+        Оплата банковской картой
+      </h1>
+      <div class="content__steps steps">
+        <div class="steps__item">
+          <span class="steps__name is-current">Информация об платеже</span>
+        </div>
+        <div class="steps__item steps__item--line"></div>
+        <div class="steps__item">
+          <span class="steps__name">Оплата</span>
+        </div>
+        <div class="steps__item steps__item--line"></div>
+        <div class="steps__item">
+          <span class="steps__name">Подтверждение оплаты</span>
+        </div>
+      </div>
+      <div class="content__in">
+        <h2 class="content__inTitle">
+          Введите данные для оплаты<a class="content__linkBack" href="#">назад</a>
+        </h2>
+        <form class="content__form form">
+          <div class="form__in form__in--cols">
+            <div class="form__content">
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">Компьютерный номер</span><input class="form__field" name="" placeholder="Например, R1111R" type="text" value="" /></label>
+              </div>
+              <div class="form__block">
+                <label class="form__label"><span class="form__labelTitle">Email</span><input class="form__field" name="" placeholder="Например, name@mail.ru" type="email" value="" /></label>
+              </div>
+              <div class="form__block form__block--sum form__block--tooltip">
+                <label class="form__label"><span class="form__labelTitle">Сумма к зачислению на счёт в&nbsp;Avon</span><span class="form__labelDimension">Руб.</span><input class="form__field" name="" placeholder="1000" type="number" value="" /></label>
+                <div class="form__tooltip">
+                  <p class="form__tooltipInfo">
+                    Введите сумму, которая должна быть&nbsp;<br />переведена на Ваш счет в Avon.
+                  </p>
+                  <p class="form__tooltipInfo">
+                    Сумма к списанию с банковской карты,&nbsp;<br />с учетом сбора, отобразится в поле ниже.
+                  </p>
+                </div>
+                <label class="form__label"><span class="form__labelDimension">Коп.</span><input class="form__field" name="" placeholder="00" type="number" value="" /></label>
+              </div>
+              <div class="form__instructions instructions instructions--small">
+                <div class="instructions__item">
+                  <p class="instructions__itemInfo">
+                    Обращаем Ваше внимание на то, что за техническую обработку платежа будет удержана <strong>комиссия 1,93%</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="form__block form__block--sum">
+                <label class="form__label form__label--noCursor"><span class="form__labelTitle">Комиссия</span><span class="form__labelDimension">Руб.</span><input class="form__field" name="" placeholder="00" readonly="readonly" type="number" value="" /></label><label class="form__label form__label--noCursor"><span class="form__labelDimension">Коп.</span><input class="form__field" name="" placeholder="00" readonly="readonly" type="number" value="" /></label>
+              </div>
+              <div class="form__block form__block--sum">
+                <label class="form__label form__label--noCursor"><span class="form__labelTitle">Сумма к списанию с&nbsp;банковской карты</span><span class="form__labelDimension">Руб.</span><input class="form__field form__field--textBold" name="" placeholder="00" readonly="readonly" type="number" value="" /></label><label class="form__label form__label--noCursor"><span class="form__labelDimension">Коп.</span><input class="form__field form__field--textBold" name="" placeholder="00" readonly="readonly" type="number" value="" /></label>
+              </div>
+            </div>
+            <div class="form__additional">
+              <div class="form__balance balance">
+                <div class="balance__info">
+                  <ul class="balance__list">
+                    <li class="balance__listItem">
+                      <span class="balance__listTitle">БАЛАНС</span><span class="balance__listAmount"><i class="balance__listText">Задолженность</i> 14 447,05 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__logos">
+                <div class="form__logoWrapper logoWrapper logoWrapper--small">
+                  <img class="icon" src="static/images/gi3/logos/visa-verified.png" />
+                </div>
+                <div class="form__logoWrapper logoWrapper logoWrapper--small">
+                  <img class="icon" src="static/images/gi3/logos/mastercard-securecode.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__in form__in--submit">
+            <div class="form__cols form__cols--marginTop">
+              <div class="form__col">
+                <a class="form__linkFaq form__linkFaq--card" href="card_settings.html">Управление Вашими банковскими картами</a>
+              </div>
+              <div class="form__col form__col--flex">
+                <img class="form__securedImg" src="static/images/gi3/secured.png" /><button class="form__button linkButton linkButton--red" type="submit">Далее</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <p class="content__note">
+        Сервис обеспечивает <span>ООО НКО «ПэйЮ»</span><br />Служба поддержки PayU работает круглосуточно: <a href="tel:84996492009">+7 (499) 649-20-09</a>; <a href="tel:88002003262">8-800-200-32-62</a> (звонок бесплатный), <a href="mailto:support@payu.ru">support@payu.ru</a>
+      </p>
+    </div>
+    <script src="static/js/gi3.js"></script>
+  </body>
+</html>

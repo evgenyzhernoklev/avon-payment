@@ -1,0 +1,11 @@
+.infoLabel {
+  display: inline-block;
+  min-width: 120px;
+  padding: 5px 10px;
+  font: 700 12px/1.2 $font-montserrat;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: #ff9170;
+  border-radius: 12px;
+}

@@ -1,0 +1,71 @@
+.instructions {
+  position: relative;
+  margin: 0 120px;
+  padding: 7px 0 62px 70px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    @include background-image(information, 50px, 50px);
+  }
+
+  &--small {
+    margin: 53px 0 31px;
+    padding: 0;
+
+    &:before {
+      top: -5px;
+      left: -42px;
+      @include background-image(information, 28px, 28px);
+    }
+  }
+
+  &__item {
+    list-style: inside decimal;
+    line-height: 1.38;
+  }
+
+  &__itemInfo {
+    line-height: 1.38;
+    color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    strong, b {
+      font-weight: 700;
+    }
+  }
+}
+
+@media ($tablet) {
+  .instructions {
+    margin: 0 20px;
+
+    &.form__instructions {
+      margin: 0 0 30px 40px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .instructions {
+    padding: 0px 0 50px 40px;
+
+    &.form__instructions {
+      padding: 0;
+    }
+
+    &:before {
+      top: 0;
+      @include background-image(information, 26px, 26px);
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+  }
+}

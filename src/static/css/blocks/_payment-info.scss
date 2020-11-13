@@ -1,0 +1,63 @@
+.paymentInfo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 62px 30px 28px;
+  box-shadow: 0px 2px 0 0 $white-light;
+  border: solid 1px $white-light;
+  background-color: rgba(246, 249, 249, 0.5);
+
+  .form__labelTitle {
+    font: 12px/1.1 $font-montserrat;
+    text-transform: uppercase;
+    color: $gray;
+  }
+
+  .form__field {
+    padding: 0;
+    height: 40px;
+    font: 500 20px/40px $font-montserrat;
+    border: 0;
+    border-bottom: 3px solid $white-light;
+    border-radius: 0;
+  }
+
+  &__col {
+    &--number {
+      flex-basis: 17%;
+    }
+
+    &--name {
+      flex-basis: 36%;
+    }
+
+    &--sum {
+      flex-basis: 23%;
+    }
+
+    &--button {
+      padding-bottom: 5px;
+    }
+
+    .form__field {
+      background-color: rgba(246, 249, 249, 0.5);
+    }
+  }
+}
+
+@media ($mobile) {
+  .paymentInfo {
+    flex-wrap: wrap;
+    padding: 30px 20px 25px;
+
+    &__col {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .paymentInfo__col {
+      flex-basis: 100%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - payment by card - step 1
+  body
+    .content
+      h1.content__title
+        | Оплата банковской картой
+
+      .content__steps.steps
+        .steps__item
+          span.steps__name.is-current Информация об платеже
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name Оплата
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name Подтверждение оплаты
+
+      .content__in
+        h2.content__inTitle
+          | Введите данные для оплаты
+          a.content__linkBack href="#" назад
+
+        form.content__form.form
+          .form__in.form__in--cols
+            .form__content
+              .form__block
+                label.form__label
+                  span.form__labelTitle Компьютерный номер
+                  input.form__field type="text" name="" placeholder="Например, R1111R" value=""
+              .form__block
+                label.form__label
+                  span.form__labelTitle Email
+                  input.form__field type="email" name="" placeholder="Например, name@mail.ru" value=""
+              .form__block.form__block--sum.form__block--tooltip
+                label.form__label
+                  span.form__labelTitle
+                    | Сумма к зачислению на счёт в&nbsp;Avon
+                  span.form__labelDimension Руб.
+                  input.form__field type="number" name="" placeholder="1000" value=""
+                .form__tooltip
+                  p.form__tooltipInfo
+                    | Введите сумму, которая должна быть&nbsp;
+                    br/
+                    | переведена на Ваш счет в Avon.
+                  p.form__tooltipInfo
+                    | Сумма к списанию с банковской карты,&nbsp;
+                    br/
+                    | с учетом сбора, отобразится в поле ниже.
+                label.form__label
+                  span.form__labelDimension Коп.
+                  input.form__field type="number" name="" placeholder="00" value=""
+              .form__instructions.instructions.instructions--small
+                .instructions__item
+                  p.instructions__itemInfo
+                    | Обращаем Ваше внимание на то, что за техническую
+                    |  обработку платежа будет удержана <strong>комиссия 1,93%</strong>
+              .form__block.form__block--sum
+                label.form__label.form__label--noCursor
+                  span.form__labelTitle Комиссия
+                  span.form__labelDimension Руб.
+                  input.form__field type="number" name="" placeholder="00" value="" readonly="readonly"
+                label.form__label.form__label--noCursor
+                  span.form__labelDimension Коп.
+                  input.form__field type="number" name="" placeholder="00" value="" readonly="readonly"
+              .form__block.form__block--sum
+                label.form__label.form__label--noCursor
+                  span.form__labelTitle
+                    | Сумма к списанию с&nbsp;банковской карты
+                  span.form__labelDimension Руб.
+                  input.form__field.form__field--textBold type="number" name="" placeholder="00" value="" readonly="readonly"
+                label.form__label.form__label--noCursor
+                  span.form__labelDimension Коп.
+                  input.form__field.form__field--textBold type="number" name="" placeholder="00" value="" readonly="readonly"
+            .form__additional
+              .form__balance.balance
+                .balance__info
+                  ul.balance__list
+                    li.balance__listItem
+                      span.balance__listTitle БАЛАНС
+                      span.balance__listAmount
+                        i.balance__listText Задолженность
+                        |  14 447,05 ₽
+                    / li.balance__listItem
+                      span.balance__listTitle ПЕНИ
+                      span.balance__listAmount  563, 20 ₽
+              .form__logos
+                .form__logoWrapper.logoWrapper.logoWrapper--small
+                  img.icon src="static/images/gi3/logos/visa-verified.png"
+                .form__logoWrapper.logoWrapper.logoWrapper--small
+                  img.icon src="static/images/gi3/logos/mastercard-securecode.png"
+
+          .form__in.form__in--submit
+            / .form__block.form__block--checkbox
+              label.form__label
+                input.form__field type="checkbox" value=""
+                span.form__labelIcon
+                p.form__labelInfo
+                  | Нажимая кнопку «Оплатить», Вы подтверждаете, что ознакомились
+                  |  и согласны с условиями Пользовательского соглашения.
+                  |  Заполнением этой формы вы подтверждаете, что ознакомились с вашими
+                  |  правами по защите персональных данных, которые касаются персональной
+                  |  информации, введенной вами в эту форму. GECAD ePayment International
+                  |  SRL зарегистрирована в ANSPDCP как имеющая право на обработку
+                  |  персонсальных данных, регистрационный № 1387/2007.
+            .form__cols.form__cols--marginTop
+              .form__col
+                a.form__linkFaq.form__linkFaq--card href="card_settings.html" Управление Вашими банковскими картами
+              .form__col.form__col--flex
+                img.form__securedImg src="static/images/gi3/secured.png"
+                button.form__button.linkButton.linkButton--red type="submit" Далее
+
+      include note
+
+    include scripts

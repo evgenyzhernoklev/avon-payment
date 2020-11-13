@@ -1,0 +1,173 @@
+.cardsList {
+  padding: 43px 32px 66px;
+
+  &__subtitle {
+    margin: 0 auto 20px;
+    font: 500 18px/1.2 $font-montserrat;
+    letter-spacing: 0.01px;
+    color: $black;
+  }
+
+  &__table {
+    width: 100%;
+    text-align: center;
+
+    td {
+      padding: 20px 15px;
+      vertical-align: middle;
+    }
+
+    thead {
+      background: $white-light;
+      font: 500 16px/1.25 $font-montserrat;
+      letter-spacing: 0.01px;
+      color: $black;
+    }
+
+    tbody {
+      background: #f6f9f9;
+
+      td {
+        font-size: 18px;
+        border-bottom: 1px solid $white-light;
+        border-right: 1px solid $white-light;
+
+        &:first-child {
+          border-left: 1px solid $white-light;
+        }
+      }
+    }
+  }
+
+  &__tableCardIcon {
+    font-size: 0;
+
+    svg {
+      max-width: 38px;
+      max-height: 24px;
+    }
+  }
+
+  &__tableFieldLabel {
+    display: block;
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  &__tableField {
+    display: none;
+
+    &:checked + .cardsList__tableFieldIcon {
+      border-color: $pink;
+      background: url('../images/gi3/sprites/sprite.svg#checkmark') no-repeat center center, $pink;
+      background-size: 45px 15px;
+    }
+  }
+
+  &__tableFieldIcon {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border: 1px solid $gray-light;
+    border-radius: 50%;
+    transition: border-color $transition-normal, background-color $transition-normal;
+  }
+
+  &__tableRemoveButton {
+    font: 700 14px/1.2 $font-montserrat;
+    text-transform: uppercase;
+    color: $pink;
+    cursor: pointer;
+
+    &:hover {
+      color: $pink-hover;
+    }
+  }
+
+  &__tableResult {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    text-align: left;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -9px;
+      @include background-image(cancel, 17px, 17px);
+    }
+
+    &.is-error {
+      &:before {
+        @include background-image(checked, 17px, 17px);
+      }
+    }
+  }
+
+  &__period {
+    display: flex;
+    margin-bottom: 43px;
+  }
+
+  &__periodText {
+    flex-basis: 62%;
+    font: 14px/1.36 $font-montserrat;
+    color: $gray;
+  }
+
+  &__periodInfo {
+    position: relative;
+    top: -9px;
+    padding-right: 90px;
+    flex-basis: 38%;
+  }
+
+  &__periodLabel {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  &__periodField {
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    font: 14px/1.36 $font-montserrat;
+    color: $gray;
+    border: solid 1px $white-light;
+    border-radius: 4px;
+    background-color: $white;
+
+    &:focus + .cardsList__periodFieldIcon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__periodFieldIcon {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    @include background-image(arrow-dropdown, 10px, 6px);
+    cursor: pointer;
+    transition: transform $transition-normal;
+  }
+
+  &__periodLink {
+    position: absolute;
+    top: 9px;
+    right: 0;
+  }
+
+  &__buttons {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  &__button {
+    display: inline-block;
+    width: 253px;
+    margin: 0 20px;
+  }
+}

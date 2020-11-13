@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+    <link href="static/css/gi3.css" rel="stylesheet" />
+    <title>AVON - payment</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="content__title">
+        Способы оплаты
+      </h1>
+      <div class="content__balance balance">
+        <div class="balance__info">
+          <ul class="balance__list">
+            <li class="balance__listItem">
+              <span class="balance__listTitle">БАЛАНС</span><span class="balance__listAmount"><i class="balance__listText">Задолженность</i> 14 447,05 ₽</span>
+            </li>
+            <li class="balance__listItem">
+              <span class="balance__listTitle">ПЕНИ</span><span class="balance__listAmount"> 563, 20 ₽</span>
+            </li>
+          </ul>
+        </div>
+        <div class="balance__text">
+          Подтверждение об оплате по представленным платежным системам поступает в компанию в течение 1 ч.<br />Для оплаты через Сбербанк Онлайн, CyberPlat, WebMoney, QIWI Кошелек, Элекснет, Яндекс.Деньги, Альфа - Клик необходимо сначала зарегистрироваться на соответствующем сайте и/или создать электронный кошелек.
+        </div>
+      </div>
+      <div class="content__tabs tabs js-tabs">
+        <div class="tabs__links">
+          <div class="tabs__linksCol tabs__linksCol--3">
+            <a class="tabs__link js-tabs-link is-active" data-content="1" href="#"><span class="tabs__linkIn">Банковская карта</span></a>
+          </div>
+          <div class="tabs__linksCol tabs__linksCol--3">
+            <a class="tabs__link js-tabs-link" data-content="2" href="#"><span class="tabs__linkIn">Счёт мобильного телефона</span></a>
+          </div>
+          <div class="tabs__linksCol tabs__linksCol--3">
+            <a class="tabs__link js-tabs-link" data-content="3" href="#"><span class="tabs__linkIn">Электронные кошельки и Интернет-банкинг</span></a>
+          </div>
+        </div>
+        <div class="tabs__content js-tabs-content is-active" data-content="1">
+          <div class="tabs__in">
+            <div class="tabs__byCard byCard">
+              <span class="byCard__label infoLabel">КОМИССИЯ 1,93%</span>
+              <div class="byCard__logos">
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#visa-electron"></use></svg>
+                </div>
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#visa"></use></svg>
+                </div>
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mastercard-electronic"></use></svg>
+                </div>
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#maestro"></use></svg>
+                </div>
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mastercard"></use></svg>
+                </div>
+                <div class="byCard__logoWrapper logoWrapper">
+                  <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mir"></use></svg>
+                </div>
+              </div>
+              <div class="byCard__instructions instructions">
+                <div class="instructions__item">
+                  <p class="instructions__itemInfo">
+                    <strong>Сумма платежа:</strong> Минимальная сумма платежа составляет 1₽, максимальная сумма устанавливается банком, выпустившим карту.
+                  </p>
+                  <p class="instructions__itemInfo">
+                    Можно произвести оплату банковскими картами МИР, Visa, Visa Electron, MasterCard, Maestro, выпущенными любым банком, при условии, что в описании вашей банковской карты прописано, что с её помощью можно оплачивать покупки через Интернет.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="tabs__form form">
+              <p class="form__labelInfo">
+                Настоящим я подтверждаю, что ознакомилась / ознакомился с <a href="#">договором-оферты</a>, который содержит условия предоставления данного сервиса, и подтверждаю свое согласие с условиями договора-оферты в полном объеме путем нажатия кнопки «Далее»
+              </p>
+              <div class="form__cols form__cols--marginTop">
+                <div class="form__col">
+                  <a class="form__linkFaq form__linkFaq--question" href="#">Часто задаваемые вопросы</a>
+                </div>
+                <div class="form__col">
+                  <button class="form__button linkButton linkButton--red" type="submit">Далее</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <p class="content__note">
+            Сервис обеспечивает <span>ООО НКО «ПэйЮ»</span><br />Служба поддержки PayU работает круглосуточно: <a href="tel:84996492009">+7 (499) 649-20-09</a>; <a href="tel:88002003262">8-800-200-32-62</a> (звонок бесплатный), <a href="mailto:support@payu.ru">support@payu.ru</a>
+          </p>
+        </div>
+        <div class="tabs__content js-tabs-content" data-content="2">
+          <div class="tabs__in">
+            <div class="tabs__paymentList paymentList">
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#mts"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      МТС
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 3,5%</span>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#beeline"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Билайн
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 2%</span>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#megafon"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Мегафон
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 4,49%</span>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#tele2"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Теле2
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 2,9%</span>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a>
+                </div>
+              </div>
+            </div>
+            <ol class="tabs__instructions instructions">
+              <li class="instructions__item">
+                Введите номер Лицевого счёта (компьютерный номер);
+              </li>
+              <li class="instructions__item">
+                Введите номер своего мобильного телефона;
+              </li>
+              <li class="instructions__item">
+                Введите необходимую сумму оплаты;
+              </li>
+              <li class="instructions__item">
+                Дождитесь SMS от Вашего Оператора мобильной связи и следуйте указанным в сообщении инструкциям
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="tabs__content js-tabs-content" data-content="3">
+          <div class="tabs__in">
+            <div class="tabs__paymentList paymentList">
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#cyberplat"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      CyberPlat
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 1%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 10 до 15 000 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#eleksnet"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Элекснет
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 1,7%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 0,01 до 15 000 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#yandex-money"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Яндекс.Деньги
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 3,5%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 1 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#webmoney"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      WebMoney
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 1,7%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 1 до 15 000 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <img class="icon" src="static/images/gi3/logos/visa-qiwi-wallet.png" />
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Visa Qiwi Wallet
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 2%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 0,01 до 15 000 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <svg class="icon"><use xlink:href="static/images/gi3/sprites/sprite.svg#sberbank-online"></use></svg>
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Сбербанк Онлайн
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 1%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 1 до 15 000 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+              <div class="paymentList__item">
+                <div class="paymentList__itemCol">
+                  <div class="paymentList__logoWrapper logoWrapper">
+                    <img class="icon" src="static/images/gi3/logos/alfa-click.png" />
+                  </div>
+                  <div class="paymentList__itemColIn">
+                    <p class="paymentList__itemName">
+                      Альфа-Клик
+                    </p>
+                    <span class="paymentList__itemLabel infoLabel">КОМИССИЯ 1,7%</span>
+                    <p class="paymentList__itemInfo">
+                      <i>Сумма платежа:</i> от 1 руб.
+                    </p>
+                  </div>
+                </div>
+                <div class="paymentList__itemCol">
+                  <a class="paymentList__itemButton linkButton linkButton--redTransparent" href="#">Оплатить</a><a class="paymentList__itemLink" href="#">Регистрация в системе</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/gi3.js"></script>
+  </body>
+</html>

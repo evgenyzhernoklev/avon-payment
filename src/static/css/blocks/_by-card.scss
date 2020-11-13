@@ -1,0 +1,49 @@
+.byCard {
+  padding: 27px 0 0;
+  text-align: center;
+
+  &__logos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 30px 0 34px;
+    padding: 0 20px;
+    font-size: 0;
+  }
+
+  &__logoWrapper {
+    margin: 0 10px 20px;
+  }
+
+  &__instructions {
+    text-align: left;
+  }
+}
+
+@media ($tablet) {
+  .byCard {
+    &__logos {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media ($mobile) {
+  .byCard {
+    &__logos {
+      padding: 0 10px;
+    }
+
+    &__logoWrapper {
+      width: 105px;
+      height: 80px;
+      line-height: 80px;
+
+      .icon {
+        max-width: 75px;
+        max-height: 50px;
+      }
+    }
+  }
+}

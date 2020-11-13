@@ -1,0 +1,153 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title AVON - payment by card - step 2
+  body
+    .content
+      h1.content__title
+        | Оплата банковской картой
+
+      .content__steps.steps
+        .steps__item
+          span.steps__name.is-passed Информация об платеже
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name.is-current Оплата
+        .steps__item.steps__item--line
+        .steps__item
+          span.steps__name Подтверждение оплаты
+
+      .content__in
+        h2.content__inTitle
+          | Введите данные карты
+          a.content__linkBack href="#" назад
+
+        form.content__form.form
+          .form__paymentInfo.paymentInfo
+            .paymentInfo__col.paymentInfo__col--number
+              .form__block
+                label.form__label
+                  span.form__labelTitle Компьютерный номер
+                  input.form__field type="text" name="" value="SOO4410U" readonly="readonly"
+            .paymentInfo__col.paymentInfo__col--name
+              .form__block
+                label.form__label
+                  span.form__labelTitle ИМЯ ПРЕДСТАВИТЕЛЯ
+                  input.form__field type="text" name="" value="Константин Константинопольский" readonly="readonly"
+            .paymentInfo__col.paymentInfo__col--sum
+              .form__block
+                label.form__label
+                  span.form__labelTitle
+                    | СУММА К ОПЛАТЕ С&nbsp;УЧЁТОМ КОМИССИИ
+                  input.form__field type="text" name="" value="10 196.80 ₽" readonly="readonly"
+            .paymentInfo__col.paymentInfo__col--button
+              a.content__linkBack.paymentInfo__link href="#" ИЗМЕНИТЬ СУММУ
+
+          .form__in
+            .form__cards.creditCards
+              .creditCards__cols
+                .creditCards__card
+                  .creditCards__logos
+                    include icons/visa-electron
+                    include icons/visa
+                    include icons/mastercard-electronic
+                    include icons/maestro
+                    include icons/mastercard
+                    include icons/mir
+                  .creditCards__block.form__block
+                    label.form__label
+                      span.form__labelTitle НОМЕР КАРТЫ
+                      input.form__field.js-card-fieldNumber type="text" name="" value="5321 3000 6322 0047" placeholder="5321 3000 6322 0047"
+                    .form__dropdown.formDropdown.js-dropdown
+                      span.formDropdown__title.js-dropdown-link ВЫБРАТЬ КАРТУ
+                      .formDropdown__content.js-dropdown-content
+                        .triangleShadow
+                          span.triangleShadow__helper
+                        ul.formDropdown__list
+                          .formDropdown__listItem.js-card-item
+                            | 5321   ****   ****   0047
+                          .formDropdown__listItem.js-card-item
+                            | 5634   ****   ****   3034
+                          .formDropdown__listItem.js-card-item
+                            | 5245   ****   ****   3497
+                          .formDropdown__listItem.js-card-item
+                            | 5245   ****   ****   3497
+                  .creditCards__selectWrapper
+                    .creditCards__block.form__block
+                      label.form__label
+                        span.form__labelTitle ДЕЙСТВУЕТ
+                        select.form__select
+                          option value="" disabled="disabled" selected="selected" ММ
+                          option value="01" 01
+                          option value="02" 02
+                          option value="03" 03
+                          option value="04" 04
+                          option value="05" 05
+                          option value="06" 06
+                          option value="07" 07
+                          option value="08" 08
+                          option value="09" 09
+                          option value="10" 10
+                          option value="11" 11
+                          option value="12" 12
+                    span.creditCards__delimiter
+                      | /
+                    .creditCards__block.form__block
+                      label.form__label
+                        select.form__select
+                          option value="" disabled="disabled" selected="selected" ГГ
+                          option value="01" 19
+                          option value="20" 20
+                          option value="21" 21
+                          option value="22" 22
+                          option value="23" 23
+                          option value="24" 24
+                  .creditCards__block.form__block
+                    label.form__label
+                      span.form__labelTitle ИМЯ И ФАМИЛИЯ ДЕРЖАТЕЛЯ КАРТЫ
+                      input.form__field type="text" name="" value="KONSTANTIN  KONSTANTINOPOLSKY" placeholder="KONSTANTIN  KONSTANTINOPOLSKY"
+              .creditCards__cols.creditCards__cols--end
+                .creditCards__card.creditCards__card--back
+                  .form__block.form__block--cvv
+                    label.form__label
+                      span.form__labelTitle CVV/CVC
+                      input.form__field type="number" name="" placeholder="000" value=""
+                    p.form__blockInfo
+                      | ТРИ ЦИФРЫ НА&nbsp;ОБОРОТЕ КАРТЫ
+
+            .form__block.form__block--checkbox.form__block--center
+              label.form__label.form__label--tooltip
+                input.form__field type="checkbox" value=""
+                span.form__labelIcon
+                p.form__labelInfo Сохранить карту
+                .form__labelQuestion
+                  .form__tooltip.form__tooltip--center
+                    p.form__tooltipInfo
+                      | Сохранение данных карты позволит
+                      |  использовать её для проведения новых платежей,
+                      |  указывая лишь код CVV2/CVC2.
+                    p.form__tooltipInfo
+                      a.form__tooltipLink href="https://avon.payupay.ru/rabota_s_dannimi_cart.pdf" target="_blank" Подробнее
+          .form__in.form__in--submit
+            / .form__block.form__block--checkbox
+              label.form__label
+                input.form__field type="checkbox" value=""
+                span.form__labelIcon
+            p.form__labelInfo
+              | Нажимая кнопку «Оплатить», Вы подтверждаете, что ознакомились
+              |  и согласны с условиями Пользовательского соглашения.
+              |  Заполнением этой формы вы подтверждаете, что ознакомились с вашими
+              |  правами по защите персональных данных, которые касаются персональной
+              |  информации, введенной вами в эту форму. GECAD ePayment International
+              |  SRL зарегистрирована в ANSPDCP как имеющая право на обработку
+              |  персонсальных данных, регистрационный № 1387/2007.
+            .form__cols.form__cols--marginTop
+              .form__col
+                a.form__linkFaq.form__linkFaq--card href="card_settings.html" Управление Вашими банковскими картами
+              .form__col
+                button.form__button.linkButton.linkButton--red type="submit" Оплатить
+
+      include note
+
+    include scripts
