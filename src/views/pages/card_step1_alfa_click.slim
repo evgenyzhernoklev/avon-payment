@@ -2,11 +2,11 @@ doctype html
 html lang="ru"
   head
     include head
-    title AVON - payment by card - step 1
+    title AVON - payment by card - step 1 alfa click
   body
     .content
       h1.content__title
-        | Оплата банковской картой
+        | Оплата через Альфа-клик
 
       .content__steps.steps
         .steps__item
@@ -20,7 +20,7 @@ html lang="ru"
 
       .content__in
         h2.content__inTitle
-          | Введите данные для оплаты
+          | Введите данные для оплаты через Альфа-клик
           a.content__linkBack href="#" назад
 
         form.content__form.form
@@ -29,7 +29,7 @@ html lang="ru"
               .form__block
                 label.form__label
                   span.form__labelTitle Компьютерный номер
-                  input.form__field type="text" name="" placeholder="Например, R1111R" value=""
+                  input.form__field type="text" name="" placeholder="Например, R1111R" value="SOO4410U"
               .form__block
                 label.form__label
                   span.form__labelTitle Email
@@ -40,13 +40,14 @@ html lang="ru"
                     | Сумма к зачислению на счёт в&nbsp;Avon
                   span.form__labelDimension Руб.
                   input.form__field type="number" name="" placeholder="1000" value=""
+                  span.form__labelNote Минимум 1₽
                 .form__tooltip
                   p.form__tooltipInfo
                     | Введите сумму, которая должна быть&nbsp;
                     br/
                     | переведена на Ваш счет в Avon.
                   p.form__tooltipInfo
-                    | Сумма к списанию с банковской карты,&nbsp;
+                    | Сумма к списанию со счета Альфа-Клик,&nbsp;
                     br/
                     | с учетом сбора, отобразится в поле ниже.
                 label.form__label
@@ -56,7 +57,7 @@ html lang="ru"
                 .instructions__item
                   p.instructions__itemInfo
                     | Обращаем Ваше внимание на то, что за техническую
-                    |  обработку платежа будет удержана <strong>комиссия 1,93%</strong>
+                    |  обработку платежа будет удержана <strong>комиссия 1,7%</strong>
               .form__block.form__block--sum
                 label.form__label.form__label--noCursor
                   span.form__labelTitle Комиссия
@@ -75,18 +76,17 @@ html lang="ru"
                   span.form__labelDimension Коп.
                   input.form__field.form__field--textBold type="number" name="" placeholder="00" value="" readonly="readonly"
             .form__additional
-              .form__balance.balance.balance--debt
+              .form__balance.balance
                 .balance__info
                   ul.balance__list
                     li.balance__listItem
                       span.balance__listTitle БАЛАНС
                       span.balance__listAmount
-                        i.balance__listText Задолженность
                         |  14&nbsp;447,05&nbsp;₽
                     / li.balance__listItem
                       span.balance__listTitle ПЕНИ
                       span.balance__listAmount  563, 20 ₽
-              .form__logos
+              / .form__logos
                 .form__logoWrapper.logoWrapper.logoWrapper--small
                   img.icon src="static/images/gi3/logos/visa-verified.png"
                 .form__logoWrapper.logoWrapper.logoWrapper--small
@@ -105,13 +105,13 @@ html lang="ru"
                   |  информации, введенной вами в эту форму. GECAD ePayment International
                   |  SRL зарегистрирована в ANSPDCP как имеющая право на обработку
                   |  персонсальных данных, регистрационный № 1387/2007.
-            .form__cols.form__cols--mt40.form__cols--ls40
-              .form__col
-                a.form__linkFaq.form__linkFaq--card href="card_settings.html" Управление Вашими банковскими картами
+            .form__cols.form__cols--mt40
               .form__col.form__col--flex
-                img.form__securedImg src="static/images/gi3/secured.png"
+                span.form__icon.form__icon--alfa
+                  img.icon src="static/images/gi3/logos/alfa-click.png"
+                button.form__button.linkButton.linkButton--purpleTransparent type="button" Вернуться назад
                 button.form__button.linkButton.linkButton--purple type="submit" Оплатить
 
-      include note
+      include note-with-icon
 
     include scripts

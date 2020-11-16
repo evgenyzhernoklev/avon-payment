@@ -21,6 +21,18 @@
       border-color: $purple-hover;
     }
   }
+
+  &--purpleTransparent {
+    color: $purple;
+    background-color: $white;
+    border: 2px solid $purple;
+
+    &:hover {
+      color: $purple-hover;
+      background-color: rgba(127, 40, 196, 0.05);
+      border-color: rgba(127, 40, 196, 0.05);
+    }
+  }
 }
 
 

@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     flex-basis: 325px;
-    margin-top: 23px;
+    margin-top: 26px;
 
     .form__balance {
       flex-basis: 100%;
@@ -168,6 +168,16 @@
     &:hover {
       @include background-image(question-red, 21px, 20px);
     }
+  }
+
+  &__labelNote {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 11px;
+    font: 400 12px/1.25 $font-montserrat;
+    color: #707677;
   }
 
   &__field {
@@ -317,7 +327,11 @@
   }
 
   &__button {
-    width: 253px;
+    width: 250px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   &__logos {
@@ -402,6 +416,21 @@
 
     &:hover {
       border-bottom-color: transparent;
+    }
+  }
+
+  &__icon {
+    .icon {
+      margin-right: 35px;
+    }
+
+    &--yandex .icon {
+      max-width: 241px;
+      max-height: 46px;
+    }
+
+    &--alfa .icon {
+      max-width: 230px;
     }
   }
 }

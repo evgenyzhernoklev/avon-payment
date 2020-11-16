@@ -114,6 +114,18 @@ button {
   border-color: #6a17ad;
 }
 
+.linkButton--purpleTransparent {
+  color: #7f28c4;
+  background-color: #ffffff;
+  border: 2px solid #7f28c4;
+}
+
+.linkButton--purpleTransparent:hover {
+  color: #6a17ad;
+  background-color: rgba(127, 40, 196, 0.05);
+  border-color: rgba(127, 40, 196, 0.05);
+}
+
 .infoLabel {
   display: inline-block;
   min-width: 120px;
@@ -401,7 +413,7 @@ input::-ms-reveal {
   flex-wrap: wrap;
   align-content: space-between;
   flex-basis: 325px;
-  margin-top: 23px;
+  margin-top: 26px;
 }
 
 .form__additional .form__balance {
@@ -559,6 +571,16 @@ input::-ms-reveal {
   background-position: center center;
   background-image: url("../images/gi3/sprites/sprite.svg#question-red");
   background-size: cover;
+}
+
+.form__labelNote {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 11px;
+  font: 400 12px/1.25 "Montserrat", Arial, sans-serif;
+  color: #707677;
 }
 
 .form__field {
@@ -720,7 +742,11 @@ input::-ms-reveal {
 }
 
 .form__button {
-  width: 253px;
+  width: 250px;
+}
+
+.form__button:not(:last-child) {
+  margin-right: 20px;
 }
 
 .form__logos {
@@ -810,6 +836,19 @@ input::-ms-reveal {
   border-bottom-color: transparent;
 }
 
+.form__icon .icon {
+  margin-right: 35px;
+}
+
+.form__icon--yandex .icon {
+  max-width: 241px;
+  max-height: 46px;
+}
+
+.form__icon--alfa .icon {
+  max-width: 230px;
+}
+
 .formDropdown__title {
   position: absolute;
   right: 20px;
@@ -882,7 +921,7 @@ input::-ms-reveal {
 }
 
 .balance__list {
-  padding: 10px 20px;
+  padding: 8px 20px;
   background-color: #f2f6f6;
   box-shadow: 0px 2px 0 0 #E4EDED;
   border: solid 1px #E4EDED;
@@ -908,6 +947,10 @@ input::-ms-reveal {
 
 .balance__listAmount {
   font: 700 16px/20px "Montserrat", Arial, sans-serif;
+  color: #1a8282;
+}
+
+.balance--debt .balance__listAmount {
   color: #e5231b;
 }
 
@@ -1341,6 +1384,8 @@ input::-ms-reveal {
 }
 
 .content__note {
+  position: relative;
+  padding-right: 200px;
   font: italic 400 14px/1.43 "Montserrat", Arial, sans-serif;
   color: #546264;
 }
@@ -1356,6 +1401,16 @@ input::-ms-reveal {
 
 .content__note span {
   color: #7f28c4;
+}
+
+.content__noteLogo {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.content__noteLogo--secured {
+  max-width: 185px;
 }
 
 .creditCards {

@@ -50,6 +50,8 @@
   }
 
   &__note {
+    position: relative;
+    padding-right: 200px;
     font: italic 400 14px/1.43 $font-montserrat;
     color: $gray;
 
@@ -64,6 +66,16 @@
 
     span {
       color: $purple;
+    }
+  }
+
+  &__noteLogo {
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    &--secured {
+      max-width: 185px;
     }
   }
 }
