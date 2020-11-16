@@ -258,8 +258,12 @@
     justify-content: space-between;
     margin: 29px auto 0;
 
-    &--marginTop {
+    &--mt40 {
       margin-top: 40px;
+    }
+
+    &--ls40 {
+      margin-left: -40px;
     }
   }
 
@@ -268,7 +272,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-left: 20px;
+      margin-left: 5px;
     }
   }
 
@@ -277,7 +281,7 @@
     display: inline-block;
     margin-left: 40px;
     font: 500 14px/1.43 $font-montserrat;
-    color: $gray-light;
+    color: $purple;
 
     &--question {
       &:before {
@@ -308,7 +312,7 @@
     }
 
     &:hover {
-      color: $pink;
+      color: $purple-hover;
     }
   }
 

@@ -50,20 +50,20 @@
   }
 
   &__note {
-    font: italic 500 15px/1.33 $font-montserrat;
-    color: $gray-light;
+    font: italic 400 14px/1.43 $font-montserrat;
+    color: $gray;
 
     a {
-      color: $pink;
+      color: $purple;
       white-space: nowrap;
 
       &:hover {
-        color: $pink-hover;
+        color: $purple-hover;
       }
     }
 
     span {
-      border-bottom: 1px solid $gray-light;
+      color: $purple;
     }
   }
 }

@@ -93,56 +93,25 @@ button {
 
 .linkButton {
   display: inline-block;
-  padding: 5px 13px;
-  line-height: 20px;
-  border-radius: 20px;
+  min-width: 220px;
+  padding: 16px 10px 14px;
+  font: 700 16px/1.5 "Montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
   cursor: pointer;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
 }
 
-.linkButton--red {
-  padding: 18px 10px;
-  height: auto;
-  font: 500 16px/20px "Montserrat", Arial, sans-serif;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 4px;
-  background-color: #FF336D;
+.linkButton--purple {
+  background-color: #7f28c4;
+  border: 2px solid #7f28c4;
 }
 
-.linkButton--red:hover {
-  color: #ffffff;
-  background-color: #E22A68;
-}
-
-.linkButton--redTransparent {
-  padding: 17px 10px;
-  height: auto;
-  font: 500 16px/20px "Montserrat", Arial, sans-serif;
-  text-align: center;
-  color: #FF336D;
-  border: solid 1px #FF336D;
-  border-radius: 4px;
-}
-
-.linkButton--redTransparent:hover {
-  color: #FF336D;
-  background-color: rgba(255, 151, 180, 0.1);
-  border-color: rgba(255, 151, 180, 0.1);
-}
-
-.linkButton__icon {
-  margin-right: 15px;
-  vertical-align: text-bottom;
-}
-
-.linkButton__icon--print {
-  display: inline-block;
-  width: 23px;
-  height: 21px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../images/gi3/sprites/sprite.svg#print-red");
-  background-size: cover;
+.linkButton--purple:hover {
+  background-color: #6a17ad;
+  border-color: #6a17ad;
 }
 
 .infoLabel {
@@ -683,15 +652,19 @@ input::-ms-reveal {
   margin: 29px auto 0;
 }
 
-.form__cols--marginTop {
+.form__cols--mt40 {
   margin-top: 40px;
+}
+
+.form__cols--ls40 {
+  margin-left: -40px;
 }
 
 .form__col--flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .form__linkFaq {
@@ -699,7 +672,7 @@ input::-ms-reveal {
   display: inline-block;
   margin-left: 40px;
   font: 500 14px/1.43 "Montserrat", Arial, sans-serif;
-  color: #a2acae;
+  color: #7f28c4;
 }
 
 .form__linkFaq--question:before {
@@ -743,7 +716,7 @@ input::-ms-reveal {
 }
 
 .form__linkFaq:hover {
-  color: #FF336D;
+  color: #6a17ad;
 }
 
 .form__button {
@@ -909,7 +882,7 @@ input::-ms-reveal {
 }
 
 .balance__list {
-  padding: 10px 25px;
+  padding: 10px 20px;
   background-color: #f2f6f6;
   box-shadow: 0px 2px 0 0 #E4EDED;
   border: solid 1px #E4EDED;
@@ -928,19 +901,19 @@ input::-ms-reveal {
 }
 
 .balance__listTitle {
-  font: 14px/22px "Montserrat", Arial, sans-serif;
+  font: 14px/20px "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
   color: #546264;
 }
 
 .balance__listAmount {
-  font: 700 18px/20px "Montserrat", Arial, sans-serif;
-  color: #FF336D;
+  font: 700 16px/20px "Montserrat", Arial, sans-serif;
+  color: #e5231b;
 }
 
 .balance__listText {
-  font-size: 13px;
-  color: #FF336D;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .balance__text {
@@ -1368,21 +1341,21 @@ input::-ms-reveal {
 }
 
 .content__note {
-  font: italic 500 15px/1.33 "Montserrat", Arial, sans-serif;
-  color: #a2acae;
+  font: italic 400 14px/1.43 "Montserrat", Arial, sans-serif;
+  color: #546264;
 }
 
 .content__note a {
-  color: #FF336D;
+  color: #7f28c4;
   white-space: nowrap;
 }
 
 .content__note a:hover {
-  color: #E22A68;
+  color: #6a17ad;
 }
 
 .content__note span {
-  border-bottom: 1px solid #a2acae;
+  color: #7f28c4;
 }
 
 .creditCards {
@@ -1658,7 +1631,7 @@ input::-ms-reveal {
 }
 
 .logoWrapper--small {
-  width: 80px;
+  width: 82px;
   height: 56px;
   line-height: 52px;
 }
