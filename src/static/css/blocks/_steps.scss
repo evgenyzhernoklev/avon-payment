@@ -8,7 +8,7 @@
 
   &__item {
     &--line {
-      width: 80px;
+      width: 20%;
       height: 1px;
       background-color: #e1e1e1;
     }
@@ -26,16 +26,16 @@
     }
 
     &.is-passed {
-      color: $pink;
+      color: $purple-hover;
 
       &:before {
         content: '';
-        @include background-image(checkmark, 8px, 6px);
-        background-size: 20px auto;
+        @include background-image(checkmark, 11px, 8px);
+        background-size: 30px auto;
         margin-right: 11px;
-        width: 16px;
-        height: 16px;
-        background-color: $pink;
+        width: 20px;
+        height: 20px;
+        background-color: $purple-hover;
         border-radius: 50%;
         vertical-align: middle;;
       }

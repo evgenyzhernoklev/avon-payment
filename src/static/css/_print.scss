@@ -1,0 +1,22 @@
+@media print {
+  .content__title,
+  .content__inTitle,
+  .steps,
+  .check__print,
+  .check__buttons {
+    display: none;
+  }
+
+  .check {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__content {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .check {
   max-width: 590px;
   margin: 0 auto;
-  padding: 64px 20px 85px;
+  padding: 58px 20px 60px;
   text-align: center;
 
   &--error {
@@ -81,15 +81,18 @@
 
   &__title {
     margin-bottom: 2px;
-    font: 100 42px/1.2 $font-montserrat;
+    font: 300 42px/1.2 $font-montserrat;
   }
 
   &__result {
     &--done {
+      font: 700 16px/1.5 $font-montserrat;
+      color: #1a8282;
+
       &:before {
         content: '';
-        margin-right: 5px;
-        @include background-image(checkmark-red, 16px, 13px);
+        margin-right: 1px;
+        @include background-image(checkmark-green, 16px, 13px);
       }
     }
   }
@@ -103,7 +106,7 @@
     }
 
     .form__labelTitle {
-      font: 12px/1.1 $font-montserrat;
+      font: 11px/1.1 $font-montserrat;
       text-transform: uppercase;
       color: $gray;
     }
@@ -111,7 +114,8 @@
     .form__field {
       padding: 0;
       height: 40px;
-      font: 500 20px/40px $font-montserrat;
+      font: 700 20px/40px $font-montserrat;
+      color: $black;
       border: 0;
       border-bottom: 3px solid $white-light;
       border-radius: 0;
@@ -119,13 +123,18 @@
   }
 
   &__printLink {
-    font: 14px/1.2 $font-montserrat;
-    color: $gray-light;
+    font: 500 14px/1.2 $font-montserrat;
+    color: $purple;
 
     &:before {
       content: '';
-      margin-right: 7px;
+      margin-right: 10px;
       @include background-image(print, 23px, 21px);
+      vertical-align: text-bottom;
+    }
+
+    &:hover {
+      color: $purple-hover;
     }
   }
 
@@ -136,7 +145,7 @@
   }
 
   &__button {
-    flex-basis: 46.5%;
+    flex-basis: 47.2%;
   }
 }
 
