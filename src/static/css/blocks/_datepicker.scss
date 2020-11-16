@@ -10,7 +10,7 @@
     display: block;
     margin: 0 auto;
     padding: 30px 8px 8px;
-    width: 224px;
+    width: 240px;
     height: auto;
 
     nav:first-child {
@@ -27,22 +27,22 @@
 
     .pmu-day-of-week * {
       font: 12px/32px $font-montserrat;
-      color: #e1e1e1;
+      color: #707677;
     }
 
     .pmu-button {
       font: 12px/32px $font-montserrat;
-      color: $gray;
+      color: $black;
       transition: color $transition-fast, background-color $transition-fast;
 
       &:hover {
-        background-color: $pink;
+        background-color: $purple-hover;
         color: $white;
       }
 
       &.pmu-month {
         font: 14px/30px $font-montserrat;
-        color: $gray-light;
+        color: #707677;
 
         &:hover {
           background-color: $white-light;
@@ -72,13 +72,13 @@
     .pmu-selected {
       font: 12px/32px $font-montserrat;
       color: $white;
-      background-color: #ff7da1;
+      background-color: $purple;
     }
 
     .pmu-today {
-      color: $gray;
       background-color: transparent;
-      border: 1px solid $pink;
+      border: 1px solid $purple;
+      color: $black;
     }
   }
 }

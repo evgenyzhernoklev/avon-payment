@@ -1137,12 +1137,13 @@ input::-ms-reveal {
 
 .cardsList__period {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 43px;
 }
 
 .cardsList__periodText {
   flex-basis: 62%;
-  font: 14px/1.36 "Montserrat", Arial, sans-serif;
+  font: 700 12px/1.36 "Montserrat", Arial, sans-serif;
   color: #546264;
 }
 
@@ -1150,7 +1151,7 @@ input::-ms-reveal {
   position: relative;
   top: -9px;
   padding-right: 90px;
-  flex-basis: 38%;
+  flex-basis: 37%;
 }
 
 .cardsList__periodLabel {
@@ -1163,8 +1164,8 @@ input::-ms-reveal {
   display: block;
   width: 100%;
   padding: 7px 10px;
-  font: 14px/1.36 "Montserrat", Arial, sans-serif;
-  color: #546264;
+  font: 500 14px/1.36 "Montserrat", Arial, sans-serif;
+  color: #181818;
   border: solid 1px #E4EDED;
   border-radius: 4px;
   background-color: #ffffff;
@@ -1585,7 +1586,7 @@ input::-ms-reveal {
   display: block;
   margin: 0 auto;
   padding: 30px 8px 8px;
-  width: 224px;
+  width: 240px;
   height: auto;
 }
 
@@ -1603,23 +1604,23 @@ input::-ms-reveal {
 
 .pickmeup .pmu-instance .pmu-day-of-week * {
   font: 12px/32px "Montserrat", Arial, sans-serif;
-  color: #e1e1e1;
+  color: #707677;
 }
 
 .pickmeup .pmu-instance .pmu-button {
   font: 12px/32px "Montserrat", Arial, sans-serif;
-  color: #546264;
+  color: #181818;
   transition: color 0.1s linear, background-color 0.1s linear;
 }
 
 .pickmeup .pmu-instance .pmu-button:hover {
-  background-color: #FF336D;
+  background-color: #6a17ad;
   color: #ffffff;
 }
 
 .pickmeup .pmu-instance .pmu-button.pmu-month {
   font: 14px/30px "Montserrat", Arial, sans-serif;
-  color: #a2acae;
+  color: #707677;
 }
 
 .pickmeup .pmu-instance .pmu-button.pmu-month:hover {
@@ -1657,13 +1658,13 @@ input::-ms-reveal {
 .pickmeup .pmu-instance .pmu-selected {
   font: 12px/32px "Montserrat", Arial, sans-serif;
   color: #ffffff;
-  background-color: #ff7da1;
+  background-color: #7f28c4;
 }
 
 .pickmeup .pmu-instance .pmu-today {
-  color: #546264;
   background-color: transparent;
-  border: 1px solid #FF336D;
+  border: 1px solid #7f28c4;
+  color: #181818;
 }
 
 .pmu-not-in-month {

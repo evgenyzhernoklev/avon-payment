@@ -111,12 +111,13 @@
 
   &__period {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 43px;
   }
 
   &__periodText {
     flex-basis: 62%;
-    font: 14px/1.36 $font-montserrat;
+    font: 700 12px/1.36 $font-montserrat;
     color: $gray;
   }
 
@@ -124,7 +125,7 @@
     position: relative;
     top: -9px;
     padding-right: 90px;
-    flex-basis: 38%;
+    flex-basis: 37%;
   }
 
   &__periodLabel {
@@ -137,8 +138,8 @@
     display: block;
     width: 100%;
     padding: 7px 10px;
-    font: 14px/1.36 $font-montserrat;
-    color: $gray;
+    font: 500 14px/1.36 $font-montserrat;
+    color: $black;
     border: solid 1px $white-light;
     border-radius: 4px;
     background-color: $white;
