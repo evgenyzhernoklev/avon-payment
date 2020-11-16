@@ -11,12 +11,14 @@
     font: 12px/1.1 $font-montserrat;
     text-transform: uppercase;
     color: $gray;
+    cursor: default;
   }
 
   .form__field {
     padding: 0;
     height: 40px;
-    font: 500 20px/40px $font-montserrat;
+    font: 700 20px/40px $font-montserrat;
+    color: $black;
     border: 0;
     border-bottom: 3px solid $white-light;
     border-radius: 0;

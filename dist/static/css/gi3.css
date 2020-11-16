@@ -433,7 +433,7 @@ input::-ms-reveal {
 }
 
 .form__block--checkbox .form__label {
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .form__block--checkbox .form__field {
@@ -473,14 +473,14 @@ input::-ms-reveal {
 
 .form__block--cvv .form__labelTitle,
 .form__block--cvv .form__blockInfo {
-  margin-bottom: 2px;
-  font: 10px/1.2 "Montserrat", Arial, sans-serif;
+  margin-bottom: 5px;
+  font: 400 11px/1.45 "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
-  color: #a2acae;
+  color: #546264;
 }
 
 .form__block--cvv .form__blockInfo {
-  margin: 10px 0 0;
+  margin: 6px 0 0;
 }
 
 .form__block--cvv .form__field {
@@ -513,6 +513,10 @@ input::-ms-reveal {
   padding-right: 30px;
 }
 
+.form__label--tooltip .form__labelInfo {
+  cursor: pointer;
+}
+
 .form__labelIcon {
   position: absolute;
   top: -2px;
@@ -534,11 +538,11 @@ input::-ms-reveal {
 .form__labelIcon:before {
   content: '';
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 6px;
   display: inline-block;
   width: 12px;
-  height: 9px;
+  height: 10px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/gi3/sprites/sprite.svg#checkmark");
@@ -569,7 +573,7 @@ input::-ms-reveal {
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../images/gi3/sprites/sprite.svg#question-red");
+  background-image: url("../images/gi3/sprites/sprite.svg#question-purple");
   background-size: cover;
 }
 
@@ -581,6 +585,45 @@ input::-ms-reveal {
   margin-top: 11px;
   font: 400 12px/1.25 "Montserrat", Arial, sans-serif;
   color: #707677;
+}
+
+.form__labelTitle {
+  display: block;
+  margin-bottom: 7px;
+  font: 500 16px/1.2 "Montserrat", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.form__labelInfo {
+  font: 14px/1.29 "Montserrat", Arial, sans-serif;
+  color: #a2acae;
+}
+
+.form__labelInfo a {
+  color: #a2acae;
+  border-bottom: 1px solid #a2acae;
+}
+
+.form__labelInfo a:hover {
+  border-bottom-color: transparent;
+}
+
+.form__labelInfo--small {
+  font: 12px/1.67 "Montserrat", Arial, sans-serif;
+  color: #546264;
+}
+
+.form__labelInfo--mt15 {
+  margin-top: 15px;
+}
+
+.form__labelDimension {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font: 14px/1.2 "Montserrat", Arial, sans-serif;
+  color: #a2acae;
+  cursor: pointer;
 }
 
 .form__field {
@@ -604,8 +647,8 @@ input::-ms-reveal {
 }
 
 .form__field:checked ~ .form__labelIcon {
-  background-color: #FF336D;
-  border-color: #FF336D;
+  background-color: #7f28c4;
+  border-color: #7f28c4;
 }
 
 .form__field:checked ~ .form__labelIcon:before {
@@ -637,36 +680,6 @@ input::-ms-reveal {
   color: #a2acae;
 }
 
-.form__labelTitle {
-  display: block;
-  margin-bottom: 7px;
-  font: 500 16px/1.2 "Montserrat", Arial, sans-serif;
-  cursor: pointer;
-}
-
-.form__labelInfo {
-  font: 14px/1.29 "Montserrat", Arial, sans-serif;
-  color: #a2acae;
-}
-
-.form__labelInfo a {
-  color: #a2acae;
-  border-bottom: 1px solid #a2acae;
-}
-
-.form__labelInfo a:hover {
-  border-bottom-color: transparent;
-}
-
-.form__labelDimension {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-  font: 14px/1.2 "Montserrat", Arial, sans-serif;
-  color: #a2acae;
-  cursor: pointer;
-}
-
 .form__cols {
   display: flex;
   align-items: center;
@@ -676,10 +689,6 @@ input::-ms-reveal {
 
 .form__cols--mt40 {
   margin-top: 40px;
-}
-
-.form__cols--ls40 {
-  margin-left: -40px;
 }
 
 .form__col--flex {
@@ -692,7 +701,6 @@ input::-ms-reveal {
 .form__linkFaq {
   position: relative;
   display: inline-block;
-  margin-left: 40px;
   font: 500 14px/1.43 "Montserrat", Arial, sans-serif;
   color: #7f28c4;
 }
@@ -765,10 +773,10 @@ input::-ms-reveal {
   z-index: 1;
   top: 26px;
   left: 100%;
-  width: 325px;
+  width: 360px;
   margin-left: 32px;
   padding: 15px 20px;
-  font: 12px/1.33 "Montserrat", Arial, sans-serif;
+  font: 12px/1.67 "Montserrat", Arial, sans-serif;
   text-align: left;
   color: #546264;
   border: solid 1px #e5eaea;
@@ -812,7 +820,7 @@ input::-ms-reveal {
 
 .form__tooltip--center {
   margin-top: 7px;
-  margin-left: 20px;
+  margin-left: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -828,12 +836,11 @@ input::-ms-reveal {
 }
 
 .form__tooltipLink {
-  color: #546264;
-  border-bottom: 1px solid #546264;
+  color: #7f28c4;
 }
 
 .form__tooltipLink:hover {
-  border-bottom-color: transparent;
+  color: #6a17ad;
 }
 
 .form__icon .icon {
@@ -852,10 +859,10 @@ input::-ms-reveal {
 .formDropdown__title {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 19px;
   display: inline-block;
-  font: 700 12px/1 "Montserrat", Arial, sans-serif;
-  color: #a2acae;
+  font: 700 11px/12px "Montserrat", Arial, sans-serif;
+  color: #7f28c4;
   cursor: pointer;
 }
 
@@ -863,7 +870,7 @@ input::-ms-reveal {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  margin: -4px 0 0 4px;
+  margin: -3px 0 0 4px;
   display: inline-block;
   width: 10px;
   height: 6px;
@@ -1396,7 +1403,7 @@ input::-ms-reveal {
 }
 
 .content__linkBack:hover {
-  color: #E22A68;
+  color: #6a17ad;
 }
 
 .content__inTitle .content__linkBack {
@@ -1506,18 +1513,24 @@ input::-ms-reveal {
 }
 
 .creditCards__block .form__labelTitle {
-  font: 10px/1.2 "Montserrat", Arial, sans-serif;
+  margin-bottom: 3px;
+  font: 11px/1.2 "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
-  color: #a2acae;
+  color: #546264;
 }
 
 .creditCards__block .form__field {
   padding: 0 8px;
   height: 50px;
-  font: 24px/50px "Montserrat", Arial, sans-serif;
-  line-height: 50px;
+  font: 500 24px/50px "Montserrat", Arial, sans-serif;
+  color: #181818;
   border: 0;
   background-color: #f6f9f9;
+}
+
+.creditCards__block .form__field--name {
+  font: 700 20px/50px "Montserrat", Arial, sans-serif;
+  color: #181818;
 }
 
 .creditCards__selectWrapper {
@@ -1736,12 +1749,14 @@ input::-ms-reveal {
   font: 12px/1.1 "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
   color: #546264;
+  cursor: default;
 }
 
 .paymentInfo .form__field {
   padding: 0;
   height: 40px;
-  font: 500 20px/40px "Montserrat", Arial, sans-serif;
+  font: 700 20px/40px "Montserrat", Arial, sans-serif;
+  color: #181818;
   border: 0;
   border-bottom: 3px solid #E4EDED;
   border-radius: 0;

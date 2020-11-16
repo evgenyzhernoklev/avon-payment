@@ -152,15 +152,15 @@
                         </select></label>
                     </div>
                   </div>
-                  <div class="creditCards__block form__block">
-                    <label class="form__label"><span class="form__labelTitle">ИМЯ И ФАМИЛИЯ ДЕРЖАТЕЛЯ КАРТЫ</span><input class="form__field" name="" placeholder="KONSTANTIN  KONSTANTINOPOLSKY" type="text" value="KONSTANTIN  KONSTANTINOPOLSKY" /></label>
+                  <div class="creditCards__block form__block form__block--name">
+                    <label class="form__label"><span class="form__labelTitle">ИМЯ И ФАМИЛИЯ ДЕРЖАТЕЛЯ КАРТЫ</span><input class="form__field form__field--name" name="" placeholder="KONSTANTIN  KONSTANTINOPOLSKY" type="text" value="KONSTANTIN  KONSTANTINOPOLSKY" /></label>
                   </div>
                 </div>
               </div>
               <div class="creditCards__cols creditCards__cols--end">
                 <div class="creditCards__card creditCards__card--back">
                   <div class="form__block form__block--cvv">
-                    <label class="form__label"><span class="form__labelTitle">CVV/CVC</span><input class="form__field" name="" placeholder="000" type="number" value="" /></label>
+                    <label class="form__label"><span class="form__labelTitle">CVV/CVC</span><input class="form__field" maxlength="3" name="" placeholder="000" type="text" value="" /></label>
                     <p class="form__blockInfo">
                       ТРИ ЦИФРЫ НА&nbsp;ОБОРОТЕ КАРТЫ
                     </p>
@@ -176,10 +176,7 @@
                 <div class="form__labelQuestion">
                   <div class="form__tooltip form__tooltip--center">
                     <p class="form__tooltipInfo">
-                      Сохранение данных карты позволит использовать её для проведения новых платежей, указывая лишь код CVV2/CVC2.
-                    </p>
-                    <p class="form__tooltipInfo">
-                      <a class="form__tooltipLink" href="https://avon.payupay.ru/rabota_s_dannimi_cart.pdf" target="_blank">Подробнее</a>
+                      Сохранение данных карты позволит использовать её для проведения новых платежей, указывая лишь код CVV2/CVC2.<br /><a class="form__tooltipLink" href="https://avon.payupay.ru/rabota_s_dannimi_cart.pdf" target="_blank">Подробнее</a>
                     </p>
                   </div>
                 </div>
@@ -187,7 +184,7 @@
             </div>
           </div>
           <div class="form__in form__in--submit">
-            <p class="form__labelInfo">
+            <p class="form__labelInfo form__labelInfo--small form__labelInfo--mt15">
               Нажимая кнопку «Оплатить», Вы подтверждаете, что ознакомились и согласны с условиями Пользовательского соглашения. Заполнением этой формы вы подтверждаете, что ознакомились с вашими правами по защите персональных данных, которые касаются персональной информации, введенной вами в эту форму. GECAD ePayment International SRL зарегистрирована в ANSPDCP как имеющая право на обработку персонсальных данных, регистрационный № 1387/2007.
             </p>
             <div class="form__cols form__cols--mt40">
@@ -195,7 +192,7 @@
                 <a class="form__linkFaq form__linkFaq--card" href="card_settings.html">Управление Вашими банковскими картами</a>
               </div>
               <div class="form__col">
-                <button class="form__button linkButton linkButton--red" type="submit">Оплатить</button>
+                <button class="form__button linkButton linkButton--purple" type="submit">Оплатить</button>
               </div>
             </div>
           </div>

@@ -69,18 +69,24 @@
     }
 
     .form__labelTitle {
-      font: 10px/1.2 $font-montserrat;
+      margin-bottom: 3px;
+      font: 11px/1.2 $font-montserrat;
       text-transform: uppercase;
-      color: $gray-light;
+      color: $gray;
     }
 
     .form__field {
       padding: 0 8px;
       height: 50px;
-      font: 24px/50px $font-montserrat;
-      line-height: 50px;
+      font: 500 24px/50px $font-montserrat;
+      color: $black;
       border: 0;
       background-color: #f6f9f9;
+
+      &--name {
+        font: 700 20px/50px $font-montserrat;
+        color: $black;
+      }
     }
   }
 

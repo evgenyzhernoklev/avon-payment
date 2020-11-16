@@ -44,7 +44,7 @@
 
     &--checkbox {
       .form__label {
-        padding-left: 40px;
+        padding-left: 35px;
       }
 
       .form__field {
@@ -86,14 +86,14 @@
 
       .form__labelTitle,
       .form__blockInfo {
-        margin-bottom: 2px;
-        font: 10px/1.2 $font-montserrat;
+        margin-bottom: 5px;
+        font: 400 11px/1.45 $font-montserrat;
         text-transform: uppercase;
-        color: $gray-light;
+        color: $gray;
       }
 
       .form__blockInfo {
-        margin: 10px 0 0;
+        margin: 6px 0 0;
       }
 
       .form__field {
@@ -127,6 +127,10 @@
 
     &--tooltip  {
       padding-right: 30px;
+
+      .form__labelInfo {
+        cursor: pointer;
+      }
     }
   }
 
@@ -150,9 +154,9 @@
     &:before {
       content: '';
       position: absolute;
-      top: 7px;
+      top: 6px;
       left: 6px;
-      @include background-image(checkmark, 12px, 9px);
+      @include background-image(checkmark, 12px, 10px);
       @include hide();
     }
   }
@@ -166,7 +170,7 @@
     transition: background-image $transition-normal;
 
     &:hover {
-      @include background-image(question-red, 21px, 20px);
+      @include background-image(question-purple, 21px, 20px);
     }
   }
 
@@ -178,6 +182,45 @@
     margin-top: 11px;
     font: 400 12px/1.25 $font-montserrat;
     color: #707677;
+  }
+
+  &__labelTitle {
+    display: block;
+    margin-bottom: 7px;
+    font: 500 16px/1.2 $font-montserrat;
+    cursor: pointer;
+  }
+
+  &__labelInfo {
+    font: 14px/1.29 $font-montserrat;
+    color: $gray-light;
+
+    a {
+      color: $gray-light;
+      border-bottom: 1px solid $gray-light;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+
+    &--small {
+      font: 12px/1.67 $font-montserrat;
+      color: $gray;
+    }
+
+    &--mt15 {
+      margin-top: 15px;
+    }
+  }
+
+  &__labelDimension {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font: 14px/1.2 $font-montserrat;
+    color: $gray-light;
+    cursor: pointer;
   }
 
   &__field {
@@ -200,8 +243,8 @@
     }
 
     &:checked ~ .form__labelIcon {
-      background-color: $pink;
-      border-color: $pink;
+      background-color: $purple;
+      border-color: $purple;
 
       &:before {
         @include show();
@@ -232,36 +275,6 @@
     }
   }
 
-  &__labelTitle {
-    display: block;
-    margin-bottom: 7px;
-    font: 500 16px/1.2 $font-montserrat;
-    cursor: pointer;
-  }
-
-  &__labelInfo {
-    font: 14px/1.29 $font-montserrat;
-    color: $gray-light;
-
-    a {
-      color: $gray-light;
-      border-bottom: 1px solid $gray-light;
-
-      &:hover {
-        border-bottom-color: transparent;
-      }
-    }
-  }
-
-  &__labelDimension {
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-    font: 14px/1.2 $font-montserrat;
-    color: $gray-light;
-    cursor: pointer;
-  }
-
   &__cols {
     display: flex;
     align-items: center;
@@ -270,10 +283,6 @@
 
     &--mt40 {
       margin-top: 40px;
-    }
-
-    &--ls40 {
-      margin-left: -40px;
     }
   }
 
@@ -289,7 +298,6 @@
   &__linkFaq {
     position: relative;
     display: inline-block;
-    margin-left: 40px;
     font: 500 14px/1.43 $font-montserrat;
     color: $purple;
 
@@ -350,10 +358,10 @@
     z-index: 1;
     top: 26px;
     left: 100%;
-    width: 325px;
+    width: 360px;
     margin-left: 32px;
     padding: 15px 20px;
-    font: 12px/1.33 $font-montserrat;
+    font: 12px/1.67 $font-montserrat;
     text-align: left;
     color: $gray;
     border: solid 1px #e5eaea;
@@ -392,7 +400,7 @@
 
     &--center {
       margin-top: 7px;
-      margin-left: 20px;
+      margin-left: 15px;
       top: 50%;
       transform: translateY(-50%);
 
@@ -411,11 +419,10 @@
   }
 
   &__tooltipLink {
-    color: $gray;
-    border-bottom: 1px solid $gray;
+    color: $purple;
 
     &:hover {
-      border-bottom-color: transparent;
+      color: $purple-hover;
     }
   }
 

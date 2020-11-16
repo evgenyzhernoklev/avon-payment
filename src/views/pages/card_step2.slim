@@ -103,16 +103,16 @@ html lang="ru"
                           option value="22" 22
                           option value="23" 23
                           option value="24" 24
-                  .creditCards__block.form__block
+                  .creditCards__block.form__block.form__block--name
                     label.form__label
                       span.form__labelTitle ИМЯ И ФАМИЛИЯ ДЕРЖАТЕЛЯ КАРТЫ
-                      input.form__field type="text" name="" value="KONSTANTIN  KONSTANTINOPOLSKY" placeholder="KONSTANTIN  KONSTANTINOPOLSKY"
+                      input.form__field.form__field--name type="text" name="" value="KONSTANTIN  KONSTANTINOPOLSKY" placeholder="KONSTANTIN  KONSTANTINOPOLSKY"
               .creditCards__cols.creditCards__cols--end
                 .creditCards__card.creditCards__card--back
                   .form__block.form__block--cvv
                     label.form__label
                       span.form__labelTitle CVV/CVC
-                      input.form__field type="number" name="" placeholder="000" value=""
+                      input.form__field type="text" maxlength="3" name="" placeholder="000" value=""
                     p.form__blockInfo
                       | ТРИ ЦИФРЫ НА&nbsp;ОБОРОТЕ КАРТЫ
 
@@ -127,14 +127,10 @@ html lang="ru"
                       | Сохранение данных карты позволит
                       |  использовать её для проведения новых платежей,
                       |  указывая лишь код CVV2/CVC2.
-                    p.form__tooltipInfo
+                      br/
                       a.form__tooltipLink href="https://avon.payupay.ru/rabota_s_dannimi_cart.pdf" target="_blank" Подробнее
           .form__in.form__in--submit
-            / .form__block.form__block--checkbox
-              label.form__label
-                input.form__field type="checkbox" value=""
-                span.form__labelIcon
-            p.form__labelInfo
+            p.form__labelInfo.form__labelInfo--small.form__labelInfo--mt15
               | Нажимая кнопку «Оплатить», Вы подтверждаете, что ознакомились
               |  и согласны с условиями Пользовательского соглашения.
               |  Заполнением этой формы вы подтверждаете, что ознакомились с вашими
@@ -146,7 +142,7 @@ html lang="ru"
               .form__col
                 a.form__linkFaq.form__linkFaq--card href="card_settings.html" Управление Вашими банковскими картами
               .form__col
-                button.form__button.linkButton.linkButton--red type="submit" Оплатить
+                button.form__button.linkButton.linkButton--purple type="submit" Оплатить
 
       include note
 

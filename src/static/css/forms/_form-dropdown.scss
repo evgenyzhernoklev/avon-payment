@@ -2,17 +2,17 @@
   &__title {
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 19px;
     display: inline-block;
-    font: 700 12px/1 $font-montserrat;
-    color: $gray-light;
+    font: 700 11px/12px $font-montserrat;
+    color: $purple;
     cursor: pointer;
 
     &:after {
       content: '';
       display: inline-block;
       vertical-align: middle;
-      margin: -4px 0 0 4px;
+      margin: -3px 0 0 4px;
       @include background-image(arrow-dropdown-gray, 10px, 6px);
       transition: transform $transition-normal;
     }
