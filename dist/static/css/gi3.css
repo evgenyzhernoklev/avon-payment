@@ -1185,8 +1185,9 @@ input::-ms-reveal {
 }
 
 .check--error .check__title {
-  margin-left: -80px;
-  margin-right: -80px;
+  margin-left: -100px;
+  margin-right: -100px;
+  color: #e5231b;
 }
 
 .check--error .check__title:before {
@@ -1199,11 +1200,12 @@ input::-ms-reveal {
   background-image: url("../images/gi3/sprites/sprite.svg#cancel");
   background-size: cover;
   vertical-align: text-top;
-  margin-top: 4px;
+  margin-top: 5px;
+  margin-right: 3px;
 }
 
 .check--error .check__form {
-  margin: 72px 0 260px;
+  margin: 72px 0 60px;
 }
 
 .check--error .check__form .form__block {
@@ -1225,16 +1227,21 @@ input::-ms-reveal {
 
 .check--error .check__form .form__field {
   height: auto;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 1.5;
   border-bottom: 0;
 }
 
 .check--error .check__form .form__field a {
-  color: #FF336D;
+  color: #7f28c4;
 }
 
 .check--error .check__form .form__field a:hover {
-  color: #E22A68;
+  color: #6a17ad;
+}
+
+.check--error .check__buttons {
+  margin-top: 60px;
 }
 
 .check__content {
@@ -1268,8 +1275,12 @@ input::-ms-reveal {
   font: 300 42px/1.2 "Montserrat", Arial, sans-serif;
 }
 
-.check__result--done {
+.check__result {
   font: 700 16px/1.5 "Montserrat", Arial, sans-serif;
+  color: #546264;
+}
+
+.check__result--done {
   color: #1a8282;
 }
 

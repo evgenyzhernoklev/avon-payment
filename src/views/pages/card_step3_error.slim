@@ -2,7 +2,7 @@ doctype html
 html lang="ru"
   head
     include head
-    title AVON - payment by card - step 3
+    title AVON - payment by card - step 3 error
   body
     .content
       h1.content__title
@@ -41,33 +41,9 @@ html lang="ru"
                     | При сохранении проблемы&nbsp;
                     br/
                     | свяжитесь <a href="#">со службой поддержки AVON</a>
-
-
-          / .check__content
-            p.check__title Спасибо!
-            p.check__result.check__result--done Ваш платёж принят
-            form.check__form.form.form--check
-              .form__block
-                label.form__label
-                  span.form__labelTitle Компьютерный номер
-                  input.form__field type="text" name="" value="SOO4410U" readonly="readonly"
-              .form__block
-                label.form__label
-                  span.form__labelTitle СУММА С УЧЁТОМ КОМИССИИ
-                  input.form__field type="text" name="" value="10 196.80 ₽" readonly="readonly"
-              .form__block
-                label.form__label
-                  span.form__labelTitle ДАТА
-                  input.form__field type="text" name="" value="08.04.2019" readonly="readonly"
-              .form__block
-                label.form__label
-                  span.form__labelTitle КОД ТРАНЗАКЦИИ
-                  input.form__field type="text" name="" value="61846054" readonly="readonly"
-            .check__print
-              a.check__printLink href="#" onclick="window.print();" Распечатать квитанцию
           .check__buttons
-            a.check__button.linkButton.linkButton--redTransparent href="#" Новый платёж
-            a.check__button.linkButton.linkButton--red href="#" На главную
+            a.check__button.linkButton.linkButton--purpleTransparent href="#" Новый платёж
+            a.check__button.linkButton.linkButton--purple href="#" На главную
 
       include note
 
