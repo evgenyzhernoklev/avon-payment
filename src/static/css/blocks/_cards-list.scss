@@ -1,5 +1,5 @@
 .cardsList {
-  padding: 43px 32px 66px;
+  padding: 40px 80px 60px;
 
   &__subtitle {
     margin: 0 auto 20px;
@@ -13,21 +13,24 @@
     text-align: center;
 
     td {
-      padding: 20px 15px;
       vertical-align: middle;
     }
 
     thead {
       background: $white-light;
-      font: 500 16px/1.25 $font-montserrat;
-      letter-spacing: 0.01px;
-      color: $black;
+      font: 700 16px/1.25 $font-montserrat;
+      color: $gray;
+
+      td {
+        padding: 22px 15px;
+      }
     }
 
     tbody {
       background: #f6f9f9;
 
       td {
+        padding: 16px 15px;
         font-size: 18px;
         border-bottom: 1px solid $white-light;
         border-right: 1px solid $white-light;
@@ -58,8 +61,8 @@
     display: none;
 
     &:checked + .cardsList__tableFieldIcon {
-      border-color: $pink;
-      background: url('../images/gi3/sprites/sprite.svg#checkmark') no-repeat center center, $pink;
+      border-color: $purple;
+      background: url('../images/gi3/sprites/sprite.svg#checkmark') no-repeat center center, $purple;
       background-size: 45px 15px;
     }
   }
@@ -74,13 +77,13 @@
   }
 
   &__tableRemoveButton {
-    font: 700 14px/1.2 $font-montserrat;
+    font: 500 14px/1.2 $font-montserrat;
     text-transform: uppercase;
-    color: $pink;
+    color: $purple;
     cursor: pointer;
 
     &:hover {
-      color: $pink-hover;
+      color: $purple-hover;
     }
   }
 
@@ -167,7 +170,7 @@
 
   &__button {
     display: inline-block;
-    width: 253px;
-    margin: 0 20px;
+    width: 250px;
+    margin: 0 15px;
   }
 }

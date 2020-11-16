@@ -3,20 +3,59 @@
   .content__inTitle,
   .steps,
   .check__print,
-  .check__buttons {
+  .check__buttons,
+  .cardsList__buttons,
+  .cardsList__subtitle,
+  .tabs__links,
+  .content__linkBack {
     display: none;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .check {
     max-width: none;
     padding-left: 0;
     padding-right: 0;
-
     &__content {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
       box-shadow: none;
+    }
+  }
+
+  .tabs__in {
+    border: 0;
+  }
+
+  .cardsList {
+    padding: 0;
+    &__period {
+      display: block;
+    }
+    &__periodText {
+      margin-bottom: 20px;
+    }
+    &__periodInfo {
+      padding: 0;
+    }
+    &__table {
+      thead {
+        background: $white;
+
+        td {
+          border: 1px solid $white-light;
+          border-left: 0;
+
+          &:first-child {
+            border-left: 1px solid $white-light;
+          }
+        }
+      }
     }
   }
 }

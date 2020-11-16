@@ -11,6 +11,10 @@ a, button {
   transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal, box-shadow $transition-normal;
 }
 
+button {
+  background-color: transparent;
+}
+
 .icon {
   display: inline-block;
   vertical-align: middle;

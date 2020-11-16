@@ -34,12 +34,12 @@
     }
   }
 
-  //   &__icon {
-  //     margin-right: 15px;
-  //     vertical-align: text-bottom;
-  //
-  //     &--print {
-  //       @include background-image(print-red, 23px, 21px);
-  //     }
-  //   }
+  &__icon {
+    margin-right: 15px;
+    vertical-align: text-bottom;
+
+    &--print {
+      @include background-image(print-purple, 23px, 21px);
+    }
+  }
 }

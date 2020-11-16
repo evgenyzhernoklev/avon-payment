@@ -86,6 +86,10 @@ button {
   transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear, box-shadow 0.3s linear;
 }
 
+button {
+  background-color: transparent;
+}
+
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -124,6 +128,21 @@ button {
   color: #6a17ad;
   background-color: rgba(127, 40, 196, 0.05);
   border-color: rgba(127, 40, 196, 0.05);
+}
+
+.linkButton__icon {
+  margin-right: 15px;
+  vertical-align: text-bottom;
+}
+
+.linkButton__icon--print {
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/gi3/sprites/sprite.svg#print-purple");
+  background-size: cover;
 }
 
 .infoLabel {
@@ -906,7 +925,7 @@ input::-ms-reveal {
 
 .formDropdown__listItem {
   padding: 16px 15px;
-  font: 24px/1 "Montserrat", Arial, sans-serif;
+  font: 500 24px/1 "Montserrat", Arial, sans-serif;
   color: #181818;
   cursor: pointer;
   transition: background-color 0.3s linear;
@@ -995,7 +1014,7 @@ input::-ms-reveal {
 }
 
 .cardsList {
-  padding: 43px 32px 66px;
+  padding: 40px 80px 60px;
 }
 
 .cardsList__subtitle {
@@ -1011,15 +1030,17 @@ input::-ms-reveal {
 }
 
 .cardsList__table td {
-  padding: 20px 15px;
   vertical-align: middle;
 }
 
 .cardsList__table thead {
   background: #E4EDED;
-  font: 500 16px/1.25 "Montserrat", Arial, sans-serif;
-  letter-spacing: 0.01px;
-  color: #181818;
+  font: 700 16px/1.25 "Montserrat", Arial, sans-serif;
+  color: #546264;
+}
+
+.cardsList__table thead td {
+  padding: 22px 15px;
 }
 
 .cardsList__table tbody {
@@ -1027,6 +1048,7 @@ input::-ms-reveal {
 }
 
 .cardsList__table tbody td {
+  padding: 16px 15px;
   font-size: 18px;
   border-bottom: 1px solid #E4EDED;
   border-right: 1px solid #E4EDED;
@@ -1056,8 +1078,8 @@ input::-ms-reveal {
 }
 
 .cardsList__tableField:checked + .cardsList__tableFieldIcon {
-  border-color: #FF336D;
-  background: url("../images/gi3/sprites/sprite.svg#checkmark") no-repeat center center, #FF336D;
+  border-color: #7f28c4;
+  background: url("../images/gi3/sprites/sprite.svg#checkmark") no-repeat center center, #7f28c4;
   background-size: 45px 15px;
 }
 
@@ -1071,14 +1093,14 @@ input::-ms-reveal {
 }
 
 .cardsList__tableRemoveButton {
-  font: 700 14px/1.2 "Montserrat", Arial, sans-serif;
+  font: 500 14px/1.2 "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
-  color: #FF336D;
+  color: #7f28c4;
   cursor: pointer;
 }
 
 .cardsList__tableRemoveButton:hover {
-  color: #E22A68;
+  color: #6a17ad;
 }
 
 .cardsList__tableResult {
@@ -1180,8 +1202,8 @@ input::-ms-reveal {
 
 .cardsList__button {
   display: inline-block;
-  width: 253px;
-  margin: 0 20px;
+  width: 250px;
+  margin: 0 15px;
 }
 
 .check {
@@ -1908,6 +1930,10 @@ input::-ms-reveal {
   flex-basis: 50%;
 }
 
+.tabs__linksCol--2:nth-child(2n+1) .tabs__link {
+  border-right: 0;
+}
+
 .tabs__linksCol--3 {
   flex-basis: 33.33%;
 }
@@ -1916,12 +1942,13 @@ input::-ms-reveal {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 0 16px;
+  padding: 14px 0 11px;
   height: 100%;
-  font: 500 14px/1.14 "Montserrat", Arial, sans-serif;
+  font: 700 20px/1.3 "Montserrat", Arial, sans-serif;
   text-align: center;
-  color: #a2acae;
-  border: solid 1px transparent;
+  color: #707677;
+  border: solid 1px #E4EDED;
+  border-width: 1px 1px 0 1px;
   border-bottom: 4px solid transparent;
   cursor: pointer;
 }
@@ -1933,7 +1960,7 @@ input::-ms-reveal {
 .tabs__link.is-active {
   color: #181818;
   border-color: #E4EDED;
-  border-bottom-color: #FF336D;
+  border-bottom-color: #7f28c4;
 }
 
 .tabs__linkIn {
@@ -2378,8 +2405,17 @@ input::-ms-reveal {
   .content__inTitle,
   .steps,
   .check__print,
-  .check__buttons {
+  .check__buttons,
+  .cardsList__buttons,
+  .cardsList__subtitle,
+  .tabs__links,
+  .content__linkBack {
     display: none;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .check {
@@ -2393,6 +2429,39 @@ input::-ms-reveal {
     padding-right: 0;
     padding-bottom: 0;
     box-shadow: none;
+  }
+
+  .tabs__in {
+    border: 0;
+  }
+
+  .cardsList {
+    padding: 0;
+  }
+
+  .cardsList__period {
+    display: block;
+  }
+
+  .cardsList__periodText {
+    margin-bottom: 20px;
+  }
+
+  .cardsList__periodInfo {
+    padding: 0;
+  }
+
+  .cardsList__table thead {
+    background: #ffffff;
+  }
+
+  .cardsList__table thead td {
+    border: 1px solid #E4EDED;
+    border-left: 0;
+  }
+
+  .cardsList__table thead td:first-child {
+    border-left: 1px solid #E4EDED;
   }
 }
 /*# sourceMappingURL=maps/gi3.css.map */
